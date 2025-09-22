@@ -6,13 +6,13 @@
 #    By: doublevv <vv>                              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/24 09:19:53 by doublevv          #+#    #+#              #
-#    Updated: 2025/09/22 12:05:23 by doublevv         ###   ########.fr        #
+#    Updated: 2025/06/24 10:35:54 by doublevv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = RPN
+NAME = btc
 
-SOURCES = main.cpp RPN.cpp
+SOURCES = main.cpp BitcoinExchange.cpp
 
 SRCS = $(SOURCES)
 
@@ -24,7 +24,7 @@ OBJS = $(SRCS:.cpp=.o)
 
 CXX = c++
 
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD -g
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD
 
 RM = rm -rf
 

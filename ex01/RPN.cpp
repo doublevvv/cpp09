@@ -19,74 +19,59 @@ void	RPN::parsing(std::string ope)
 	if (!isdigit(ope[0]))
 	{
 		std::cout << "Error: first character incorrect\n";
-		std::cout << "OPE = " << ope[0] << std::endl;
 		return ;
 	}
 
 	for (size_t i = 0; i < ope.size(); )
 	{
-		// std::cout << "TAILLE = " << ope.size() << std::endl;
 		if (ope[i] == ' ')
-			i++;
-		if (isdigit(ope[i]) || ope[i] == '+' || ope[i] == '-' || ope[i] == '*' || ope[i] == '/')
 		{
-			// std::cout << "OPE1 = " << ope[i] << std::endl;
-			if (isdigit(ope[i]))
-			{
-				stack.push(std::atoi(&ope[i]));
-				std::cout << "STACK PUSH = " << stack.top() << std::endl;
-			}
-			// i++;
-			int res = stack.top();
-			stack.pop();
-			if (ope[i] == '+')
-			{
-				std::cout << "OPE1 = " << ope[i] << std::endl;
-				std::cout << "RES1 == " << res << std::endl;
-				std::cout << "TOP = " << stack.top() << std::endl;
-				res = res + stack.top();
-				std::cout << "RES2 == " << res << std::endl;
-				stack.push(res);
-			}
-			if (ope[i] == '-')
-			{
-				std::cout << "RES1 == " << res << std::endl;
-				std::cout << "OPE1 = " << ope[i] << std::endl;
-				std::cout << "TOP = " << stack.top() << std::endl;
-				res = res - stack.top();
-				// stack.pop();
-				std::cout << "RES2 == " << res << std::endl;
-				stack.push(res);
-			}
-			if (ope[i] == '*')
-			{
-				std::cout << "RES1 == " << res << std::endl;
-				std::cout << "OPE1 = " << ope[i] << std::endl;
-				std::cout << "TOP = " << stack.top() << std::endl;
-				res = res * stack.top();
-				// stack.pop();
-				std::cout << "RES2 == " << res << std::endl;
-				stack.push(res);
-			}
-			if (ope[i] == '/')
-			{
-				std::cout << "RES1 == " << res << std::endl;
-				std::cout << "OPE1 = " << ope[i] << std::endl;
-				std::cout << "TOP = " << stack.top() << std::endl;
-				res = res / stack.top();
-				// stack.pop();
-				std::cout << "RES2 == " << res << std::endl;
-				stack.push(res);
-			}
-			// std::cout << "TAILLE STACK = " << stack.size() << std::endl;
-			// std::cout << "TOP STACK = " << stack.top() << std::endl;
-			// std::cout << "I = " << i << std::endl;
 			i++;
+			continue ;
+		}
+		if (isdigit(ope[i]))
+		{
+			stack.push(std::atoi(&ope[i]));
+			i++;
+		}
+		else if (ope[i] == '+' || ope[i] == '-' || ope[i] == '*' || ope[i] == '/')
+		{
+			if (stack.size() < 2)
+			{
+				std::cout << "Error: not enough operands for operation '" << ope[i] << "'\n";
+				return;
+			}
+			int first = stack.top(); stack.pop();
+			int second = stack.top(); stack.pop();
+			int res = 0;
+
+			if (ope[i] == '+')
+				res = second + first;
+			else if (ope[i] == '-')
+				res = second - first;
+			else if (ope[i] == '*')
+				res = second * first;
+			else if (ope[i] == '/')
+			{
+				if (first == 0)
+				{
+					std::cout << "Error: division by zero\n";
+					return;
+				}
+				res = second / first;
+			}
+			stack.push(res);
+			std::cout << "Result pushed: " << res << std::endl;
 		}
 		else
 		{
 			std::cout << "Error: must have operators\n";
 			return ;
 		}
+		i++;
 	}
+	if (stack.size() == 1)
+		std::cout << "final result = " << stack.top() << std::endl;
+	else
+		std::cout << "error: extra values\n";
 }
