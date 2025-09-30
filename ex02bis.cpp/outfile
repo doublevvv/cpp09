@@ -1,0 +1,1807 @@
+apres recusrion
+{37 77 52 89 42 54 38 93 17 46 72 82 21 78 15 94 24 44 4 57 19 45 64 76 1 12 13 91 35 75 48 97 } {22 26 3 32 6 63 68 74 33 59 10 67 41 50 81 88 36 56 58 66 2 7 20 87 16 29 40 61 60 62 92 99 } {18 28 23 90 31 70 79 95 47 55 34 80 14 86 84 98 11 25 43 53 30 39 71 85 9 73 69 96 5 65 27 100 } {49 51 8 83 }
+nb pair : 1 size elem : 32
+c'est trie
+PRINT GRAND
+{37 77 52 89 42 54 38 93 17 46 72 82 21 78 15 94 24 44 4 57 19 45 64 76 1 12 13 91 35 75 48 97 } {22 26 3 32 6 63 68 74 33 59 10 67 41 50 81 88 36 56 58 66 2 7 20 87 16 29 40 61 60 62 92 99 } {49 51 8 83 }
+PRINT petit
+{18 28 23 90 31 70 79 95 47 55 34 80 14 86 84 98 11 25 43 53 30 39 71 85 9 73 69 96 5 65 27 100 }
+jacob : 3 prev : 1
+prev1 jacob3 index : 0nbr element:32prev1end calcul :63
+index : 0 i : 1 nb elem : 32
+endsize == 1
+endsize == 3
+if end
+endsize == 2
+midlle = 97end :99 a inserer :100
+start  :97midlle = 99end :99 a inserer :100
+start  :99INSERTED = 49
+petit a inserer :0
+emplacement dans grand a inserer :64
+fin d'une eape de recusion
+
+
+apres recusrion
+{37 77 52 89 42 54 38 93 17 46 72 82 21 78 15 94 } {24 44 4 57 19 45 64 76 1 12 13 91 35 75 48 97 } {22 26 3 32 6 63 68 74 33 59 10 67 41 50 81 88 } {36 56 58 66 2 7 20 87 16 29 40 61 60 62 92 99 } {18 28 23 90 31 70 79 95 47 55 34 80 14 86 84 98 } {11 25 43 53 30 39 71 85 9 73 69 96 5 65 27 100 } {49 51 8 83 }
+nb pair : 3 size elem : 16
+c'est trie
+PRINT GRAND
+{37 77 52 89 42 54 38 93 17 46 72 82 21 78 15 94 } {24 44 4 57 19 45 64 76 1 12 13 91 35 75 48 97 } {36 56 58 66 2 7 20 87 16 29 40 61 60 62 92 99 } {11 25 43 53 30 39 71 85 9 73 69 96 5 65 27 100 } {49 51 8 83 }
+PRINT petit
+{22 26 3 32 6 63 68 74 33 59 10 67 41 50 81 88 } {18 28 23 90 31 70 79 95 47 55 34 80 14 86 84 98 }
+jacob : 3 prev : 1
+prev1 jacob3 index : 1nbr element:16prev1end calcul :31
+index : 1 i : 1 nb elem : 16
+endsize == 1
+endsize == 3
+endsize == 3
+midlle = 97end :99 a inserer :98
+start  :94midlle = 99end :99 a inserer :98
+start  :99INSERTED = 36
+petit a inserer :16
+emplacement dans grand a inserer :32
+c'est trie
+PRINT GRAND
+{37 77 52 89 42 54 38 93 17 46 72 82 21 78 15 94 } {24 44 4 57 19 45 64 76 1 12 13 91 35 75 48 97 } {18 28 23 90 31 70 79 95 47 55 34 80 14 86 84 98 } {36 56 58 66 2 7 20 87 16 29 40 61 60 62 92 99 } {11 25 43 53 30 39 71 85 9 73 69 96 5 65 27 100 } {49 51 8 83 }
+PRINT petit
+{22 26 3 32 6 63 68 74 33 59 10 67 41 50 81 88 }
+prev1 jacob3 index : 0nbr element:16prev1end calcul :31
+index : 0 i : 1 nb elem : 16
+endsize == 1
+endsize == 3
+endsize == 3
+midlle = 97end :98 a inserer :88
+start  :94midlle = 94end :94 a inserer :88
+start  :94INSERTED = 37
+petit a inserer :0
+emplacement dans grand a inserer :0
+fin d'une eape de recusion
+
+
+apres recusrion
+{22 26 3 32 6 63 68 74 } {33 59 10 67 41 50 81 88 } {37 77 52 89 42 54 38 93 } {17 46 72 82 21 78 15 94 } {24 44 4 57 19 45 64 76 } {1 12 13 91 35 75 48 97 } {18 28 23 90 31 70 79 95 } {47 55 34 80 14 86 84 98 } {36 56 58 66 2 7 20 87 } {16 29 40 61 60 62 92 99 } {11 25 43 53 30 39 71 85 } {9 73 69 96 5 65 27 100 } {49 51 8 83 }
+nb pair : 6 size elem : 8
+c'est trie
+PRINT GRAND
+{22 26 3 32 6 63 68 74 } {33 59 10 67 41 50 81 88 } {17 46 72 82 21 78 15 94 } {1 12 13 91 35 75 48 97 } {47 55 34 80 14 86 84 98 } {16 29 40 61 60 62 92 99 } {9 73 69 96 5 65 27 100 } {49 51 8 83 }
+PRINT petit
+{37 77 52 89 42 54 38 93 } {24 44 4 57 19 45 64 76 } {18 28 23 90 31 70 79 95 } {36 56 58 66 2 7 20 87 } {11 25 43 53 30 39 71 85 }
+jacob : 3 prev : 1
+prev1 jacob3 index : 1nbr element:8prev1end calcul :15
+index : 1 i : 1 nb elem : 8
+endsize == 1
+endsize == 3
+endsize == 3
+midlle = 88end :94 a inserer :76
+start  :74midlle = 74end :74 a inserer :76
+start  :74INSERTED = 33
+petit a inserer :8
+emplacement dans grand a inserer :8
+c'est trie
+PRINT GRAND
+{22 26 3 32 6 63 68 74 } {24 44 4 57 19 45 64 76 } {33 59 10 67 41 50 81 88 } {17 46 72 82 21 78 15 94 } {1 12 13 91 35 75 48 97 } {47 55 34 80 14 86 84 98 } {16 29 40 61 60 62 92 99 } {9 73 69 96 5 65 27 100 } {49 51 8 83 }
+PRINT petit
+{37 77 52 89 42 54 38 93 } {18 28 23 90 31 70 79 95 } {36 56 58 66 2 7 20 87 } {11 25 43 53 30 39 71 85 }
+prev1 jacob3 index : 0nbr element:8prev1end calcul :15
+index : 0 i : 1 nb elem : 8
+endsize == 1
+endsize == 3
+endsize == 3
+midlle = 76end :88 a inserer :93
+start  :74midlle = 88end :88 a inserer :93
+start  :88INSERTED = 17
+petit a inserer :0
+emplacement dans grand a inserer :24
+c'est trie
+PRINT GRAND
+{22 26 3 32 6 63 68 74 } {24 44 4 57 19 45 64 76 } {33 59 10 67 41 50 81 88 } {37 77 52 89 42 54 38 93 } {17 46 72 82 21 78 15 94 } {1 12 13 91 35 75 48 97 } {47 55 34 80 14 86 84 98 } {16 29 40 61 60 62 92 99 } {9 73 69 96 5 65 27 100 } {49 51 8 83 }
+PRINT petit
+{18 28 23 90 31 70 79 95 } {36 56 58 66 2 7 20 87 } {11 25 43 53 30 39 71 85 }
+jacob : 5 prev : 3
+prev3 jacob5 index : 1nbr element:8prev3end calcul :47
+index : 1 i : 2 nb elem : 8
+endsize == 9
+endsize == 9
+endsize == 9
+midlle = 94end :100 a inserer :87
+start  :74midlle = 76end :93 a inserer :87
+start  :74midlle = 88end :93 a inserer :87
+start  :88INSERTED = 33
+petit a inserer :8
+emplacement dans grand a inserer :16
+c'est trie
+PRINT GRAND
+{22 26 3 32 6 63 68 74 } {24 44 4 57 19 45 64 76 } {36 56 58 66 2 7 20 87 } {33 59 10 67 41 50 81 88 } {37 77 52 89 42 54 38 93 } {17 46 72 82 21 78 15 94 } {1 12 13 91 35 75 48 97 } {47 55 34 80 14 86 84 98 } {16 29 40 61 60 62 92 99 } {9 73 69 96 5 65 27 100 } {49 51 8 83 }
+PRINT petit
+{18 28 23 90 31 70 79 95 } {11 25 43 53 30 39 71 85 }
+prev3 jacob5 index : 0nbr element:8prev3end calcul :47
+index : 0 i : 2 nb elem : 8
+endsize == 9
+endsize == 9
+endsize == 9
+midlle = 93end :99 a inserer :95
+start  :74midlle = 97end :99 a inserer :95
+start  :94midlle = 94end :94 a inserer :95
+start  :94INSERTED = 1
+petit a inserer :0
+emplacement dans grand a inserer :48
+c'est trie
+PRINT GRAND
+{22 26 3 32 6 63 68 74 } {24 44 4 57 19 45 64 76 } {36 56 58 66 2 7 20 87 } {33 59 10 67 41 50 81 88 } {37 77 52 89 42 54 38 93 } {17 46 72 82 21 78 15 94 } {18 28 23 90 31 70 79 95 } {1 12 13 91 35 75 48 97 } {47 55 34 80 14 86 84 98 } {16 29 40 61 60 62 92 99 } {9 73 69 96 5 65 27 100 } {49 51 8 83 }
+PRINT petit
+{11 25 43 53 30 39 71 85 }
+jacob : 11 prev : 5
+prev5 jacob11 index : 0nbr element:8prev5end calcul :79
+index : 0 i : 3 nb elem : 8
+endsize == 25
+endsize == 25
+if end
+endsize == 11
+midlle = 94end :100 a inserer :85
+start  :74midlle = 87end :93 a inserer :85
+start  :74midlle = 74end :76 a inserer :85
+start  :74midlle = 76end :76 a inserer :85
+start  :76INSERTED = 36
+petit a inserer :0
+emplacement dans grand a inserer :16
+fin d'une eape de recusion
+
+
+apres recusrion
+{22 26 3 32 } {6 63 68 74 } {24 44 4 57 } {19 45 64 76 } {11 25 43 53 } {30 39 71 85 } {36 56 58 66 } {2 7 20 87 } {33 59 10 67 } {41 50 81 88 } {37 77 52 89 } {42 54 38 93 } {17 46 72 82 } {21 78 15 94 } {18 28 23 90 } {31 70 79 95 } {1 12 13 91 } {35 75 48 97 } {47 55 34 80 } {14 86 84 98 } {16 29 40 61 } {60 62 92 99 } {9 73 69 96 } {5 65 27 100 } {49 51 8 83 }
+nb pair : 12 size elem : 4
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {6 63 68 74 } {19 45 64 76 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{24 44 4 57 } {11 25 43 53 } {36 56 58 66 } {33 59 10 67 } {37 77 52 89 } {17 46 72 82 } {18 28 23 90 } {1 12 13 91 } {47 55 34 80 } {16 29 40 61 } {9 73 69 96 } {49 51 8 83 }
+jacob : 3 prev : 1
+prev1 jacob3 index : 1nbr element:4prev1end calcul :7
+index : 1 i : 1 nb elem : 4
+endsize == 1
+endsize == 3
+endsize == 3
+midlle = 74end :76 a inserer :53
+start  :32midlle = 32end :32 a inserer :53
+start  :32INSERTED = 6
+petit a inserer :4
+emplacement dans grand a inserer :4
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {11 25 43 53 } {6 63 68 74 } {19 45 64 76 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{24 44 4 57 } {36 56 58 66 } {33 59 10 67 } {37 77 52 89 } {17 46 72 82 } {18 28 23 90 } {1 12 13 91 } {47 55 34 80 } {16 29 40 61 } {9 73 69 96 } {49 51 8 83 }
+prev1 jacob3 index : 0nbr element:4prev1end calcul :7
+index : 0 i : 1 nb elem : 4
+endsize == 1
+endsize == 3
+endsize == 3
+midlle = 53end :74 a inserer :57
+start  :32midlle = 74end :74 a inserer :57
+start  :74INSERTED = 6
+petit a inserer :0
+emplacement dans grand a inserer :8
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {11 25 43 53 } {24 44 4 57 } {6 63 68 74 } {19 45 64 76 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{36 56 58 66 } {33 59 10 67 } {37 77 52 89 } {17 46 72 82 } {18 28 23 90 } {1 12 13 91 } {47 55 34 80 } {16 29 40 61 } {9 73 69 96 } {49 51 8 83 }
+jacob : 5 prev : 3
+prev3 jacob5 index : 1nbr element:4prev3end calcul :23
+index : 1 i : 2 nb elem : 4
+endsize == 9
+endsize == 9
+endsize == 9
+midlle = 76end :93 a inserer :67
+start  :32midlle = 53end :74 a inserer :67
+start  :32midlle = 57end :74 a inserer :67
+start  :57midlle = 74end :74 a inserer :67
+start  :74INSERTED = 6
+petit a inserer :4
+emplacement dans grand a inserer :12
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {11 25 43 53 } {24 44 4 57 } {33 59 10 67 } {6 63 68 74 } {19 45 64 76 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{36 56 58 66 } {37 77 52 89 } {17 46 72 82 } {18 28 23 90 } {1 12 13 91 } {47 55 34 80 } {16 29 40 61 } {9 73 69 96 } {49 51 8 83 }
+prev3 jacob5 index : 0nbr element:4prev3end calcul :23
+index : 0 i : 2 nb elem : 4
+endsize == 9
+endsize == 9
+endsize == 9
+midlle = 74end :88 a inserer :66
+start  :32midlle = 53end :67 a inserer :66
+start  :32midlle = 57end :67 a inserer :66
+start  :57midlle = 67end :67 a inserer :66
+start  :67INSERTED = 33
+petit a inserer :0
+emplacement dans grand a inserer :12
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {11 25 43 53 } {24 44 4 57 } {36 56 58 66 } {33 59 10 67 } {6 63 68 74 } {19 45 64 76 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{37 77 52 89 } {17 46 72 82 } {18 28 23 90 } {1 12 13 91 } {47 55 34 80 } {16 29 40 61 } {9 73 69 96 } {49 51 8 83 }
+jacob : 11 prev : 5
+prev5 jacob11 index : 5nbr element:4prev5end calcul :39
+index : 5 i : 3 nb elem : 4
+endsize == 25
+endsize == 25
+if end
+endsize == 17
+midlle = 87end :100 a inserer :61
+start  :32midlle = 66end :85 a inserer :61
+start  :32midlle = 53end :57 a inserer :61
+start  :32midlle = 57end :57 a inserer :61
+start  :57INSERTED = 36
+petit a inserer :20
+emplacement dans grand a inserer :12
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {11 25 43 53 } {24 44 4 57 } {16 29 40 61 } {36 56 58 66 } {33 59 10 67 } {6 63 68 74 } {19 45 64 76 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{37 77 52 89 } {17 46 72 82 } {18 28 23 90 } {1 12 13 91 } {47 55 34 80 } {9 73 69 96 } {49 51 8 83 }
+prev5 jacob11 index : 4nbr element:4prev5end calcul :39
+index : 4 i : 3 nb elem : 4
+endsize == 25
+endsize == 25
+if end
+endsize == 18
+midlle = 85end :100 a inserer :80
+start  :32midlle = 61end :76 a inserer :80
+start  :32midlle = 67end :76 a inserer :80
+start  :66midlle = 74end :76 a inserer :80
+start  :74midlle = 76end :76 a inserer :80
+start  :76INSERTED = 30
+petit a inserer :16
+emplacement dans grand a inserer :32
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {11 25 43 53 } {24 44 4 57 } {16 29 40 61 } {36 56 58 66 } {33 59 10 67 } {6 63 68 74 } {19 45 64 76 } {47 55 34 80 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{37 77 52 89 } {17 46 72 82 } {18 28 23 90 } {1 12 13 91 } {9 73 69 96 } {49 51 8 83 }
+prev5 jacob11 index : 3nbr element:4prev5end calcul :39
+index : 3 i : 3 nb elem : 4
+endsize == 25
+endsize == 25
+if end
+endsize == 19
+midlle = 85end :100 a inserer :91
+start  :32midlle = 95end :100 a inserer :91
+start  :87midlle = 88end :94 a inserer :91
+start  :87midlle = 93end :94 a inserer :91
+start  :93INSERTED = 42
+petit a inserer :12
+emplacement dans grand a inserer :48
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {11 25 43 53 } {24 44 4 57 } {16 29 40 61 } {36 56 58 66 } {33 59 10 67 } {6 63 68 74 } {19 45 64 76 } {47 55 34 80 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {1 12 13 91 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{37 77 52 89 } {17 46 72 82 } {18 28 23 90 } {9 73 69 96 } {49 51 8 83 }
+prev5 jacob11 index : 2nbr element:4prev5end calcul :39
+index : 2 i : 3 nb elem : 4
+endsize == 25
+endsize == 25
+if end
+endsize == 20
+midlle = 85end :100 a inserer :90
+start  :32midlle = 94end :100 a inserer :90
+start  :87midlle = 88end :93 a inserer :90
+start  :87midlle = 91end :93 a inserer :90
+start  :91INSERTED = 1
+petit a inserer :8
+emplacement dans grand a inserer :48
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {11 25 43 53 } {24 44 4 57 } {16 29 40 61 } {36 56 58 66 } {33 59 10 67 } {6 63 68 74 } {19 45 64 76 } {47 55 34 80 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {18 28 23 90 } {1 12 13 91 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{37 77 52 89 } {17 46 72 82 } {9 73 69 96 } {49 51 8 83 }
+prev5 jacob11 index : 1nbr element:4prev5end calcul :39
+index : 1 i : 3 nb elem : 4
+endsize == 25
+endsize == 25
+if end
+endsize == 21
+midlle = 87end :100 a inserer :82
+start  :32midlle = 66end :85 a inserer :82
+start  :32midlle = 76end :85 a inserer :82
+start  :67midlle = 80end :85 a inserer :82
+start  :80midlle = 85end :85 a inserer :82
+start  :85INSERTED = 30
+petit a inserer :4
+emplacement dans grand a inserer :36
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {11 25 43 53 } {24 44 4 57 } {16 29 40 61 } {36 56 58 66 } {33 59 10 67 } {6 63 68 74 } {19 45 64 76 } {47 55 34 80 } {17 46 72 82 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {18 28 23 90 } {1 12 13 91 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{37 77 52 89 } {9 73 69 96 } {49 51 8 83 }
+prev5 jacob11 index : 0nbr element:4prev5end calcul :39
+index : 0 i : 3 nb elem : 4
+endsize == 25
+endsize == 25
+if end
+endsize == 22
+midlle = 85end :100 a inserer :89
+start  :32midlle = 94end :100 a inserer :89
+start  :87midlle = 90end :93 a inserer :89
+start  :87midlle = 87end :88 a inserer :89
+start  :87midlle = 88end :88 a inserer :89
+start  :88INSERTED = 18
+petit a inserer :0
+emplacement dans grand a inserer :52
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {11 25 43 53 } {24 44 4 57 } {16 29 40 61 } {36 56 58 66 } {33 59 10 67 } {6 63 68 74 } {19 45 64 76 } {47 55 34 80 } {17 46 72 82 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {37 77 52 89 } {18 28 23 90 } {1 12 13 91 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{9 73 69 96 } {49 51 8 83 }
+jacob : 21 prev : 11
+prev11 jacob21 index : 1nbr element:4prev11end calcul :87
+index : 1 i : 4 nb elem : 4
+endsize == 121
+endsize == 121
+if end
+endsize == 23
+midlle = 87end :100 a inserer :83
+start  :32midlle = 67end :85 a inserer :83
+start  :32midlle = 80end :85 a inserer :83
+start  :74midlle = 82end :85 a inserer :83
+start  :82midlle = 85end :85 a inserer :83
+start  :85INSERTED = 30
+petit a inserer :4
+emplacement dans grand a inserer :40
+c'est trie
+PRINT GRAND
+{22 26 3 32 } {11 25 43 53 } {24 44 4 57 } {16 29 40 61 } {36 56 58 66 } {33 59 10 67 } {6 63 68 74 } {19 45 64 76 } {47 55 34 80 } {17 46 72 82 } {49 51 8 83 } {30 39 71 85 } {2 7 20 87 } {41 50 81 88 } {37 77 52 89 } {18 28 23 90 } {1 12 13 91 } {42 54 38 93 } {21 78 15 94 } {31 70 79 95 } {35 75 48 97 } {14 86 84 98 } {60 62 92 99 } {5 65 27 100 }
+PRINT petit
+{9 73 69 96 }
+prev11 jacob21 index : 0nbr element:4prev11end calcul :87
+index : 0 i : 4 nb elem : 4
+endsize == 121
+endsize == 121
+if end
+endsize == 24
+midlle = 85end :100 a inserer :96
+start  :32midlle = 93end :100 a inserer :96
+start  :87midlle = 97end :100 a inserer :96
+start  :94midlle = 94end :95 a inserer :96
+start  :94midlle = 95end :95 a inserer :96
+start  :95INSERTED = 35
+petit a inserer :0
+emplacement dans grand a inserer :80
+fin d'une eape de recusion
+
+
+apres recusrion
+{22 26 } {3 32 } {11 25 } {43 53 } {24 44 } {4 57 } {16 29 } {40 61 } {36 56 } {58 66 } {33 59 } {10 67 } {6 63 } {68 74 } {19 45 } {64 76 } {47 55 } {34 80 } {17 46 } {72 82 } {49 51 } {8 83 } {30 39 } {71 85 } {2 7 } {20 87 } {41 50 } {81 88 } {37 77 } {52 89 } {18 28 } {23 90 } {1 12 } {13 91 } {42 54 } {38 93 } {21 78 } {15 94 } {31 70 } {79 95 } {9 73 } {69 96 } {35 75 } {48 97 } {14 86 } {84 98 } {60 62 } {92 99 } {5 65 } {27 100 }
+nb pair : 25 size elem : 2
+c'est trie
+PRINT GRAND
+{22 26 } {3 32 } {43 53 } {4 57 } {40 61 } {58 66 } {10 67 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{11 25 } {24 44 } {16 29 } {36 56 } {33 59 } {6 63 } {19 45 } {47 55 } {17 46 } {49 51 } {30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {9 73 } {35 75 } {14 86 } {60 62 } {5 65 }
+jacob : 3 prev : 1
+prev1 jacob3 index : 1nbr element:2prev1end calcul :3
+index : 1 i : 1 nb elem : 2
+endsize == 1
+endsize == 3
+endsize == 3
+midlle = 32end :53 a inserer :44
+start  :26midlle = 53end :53 a inserer :44
+start  :53INSERTED = 43
+petit a inserer :2
+emplacement dans grand a inserer :4
+c'est trie
+PRINT GRAND
+{22 26 } {3 32 } {24 44 } {43 53 } {4 57 } {40 61 } {58 66 } {10 67 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{11 25 } {16 29 } {36 56 } {33 59 } {6 63 } {19 45 } {47 55 } {17 46 } {49 51 } {30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {9 73 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev1 jacob3 index : 0nbr element:2prev1end calcul :3
+index : 0 i : 1 nb elem : 2
+endsize == 1
+endsize == 3
+endsize == 3
+midlle = 32end :44 a inserer :25
+start  :26midlle = 26end :26 a inserer :25
+start  :26INSERTED = 22
+petit a inserer :0
+emplacement dans grand a inserer :0
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {3 32 } {24 44 } {43 53 } {4 57 } {40 61 } {58 66 } {10 67 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{16 29 } {36 56 } {33 59 } {6 63 } {19 45 } {47 55 } {17 46 } {49 51 } {30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {9 73 } {35 75 } {14 86 } {60 62 } {5 65 }
+jacob : 5 prev : 3
+prev3 jacob5 index : 1nbr element:2prev3end calcul :11
+index : 1 i : 2 nb elem : 2
+endsize == 9
+endsize == 9
+endsize == 9
+midlle = 53end :67 a inserer :56
+start  :25midlle = 61end :67 a inserer :56
+start  :57midlle = 57end :57 a inserer :56
+start  :57INSERTED = 4
+petit a inserer :2
+emplacement dans grand a inserer :10
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {3 32 } {24 44 } {43 53 } {36 56 } {4 57 } {40 61 } {58 66 } {10 67 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{16 29 } {33 59 } {6 63 } {19 45 } {47 55 } {17 46 } {49 51 } {30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {9 73 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev3 jacob5 index : 0nbr element:2prev3end calcul :11
+index : 0 i : 2 nb elem : 2
+endsize == 9
+endsize == 9
+endsize == 9
+midlle = 53end :66 a inserer :29
+start  :25midlle = 26end :44 a inserer :29
+start  :25midlle = 32end :44 a inserer :29
+start  :32INSERTED = 3
+petit a inserer :0
+emplacement dans grand a inserer :4
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {43 53 } {36 56 } {4 57 } {40 61 } {58 66 } {10 67 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{33 59 } {6 63 } {19 45 } {47 55 } {17 46 } {49 51 } {30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {9 73 } {35 75 } {14 86 } {60 62 } {5 65 }
+jacob : 11 prev : 5
+prev5 jacob11 index : 5nbr element:2prev5end calcul :19
+index : 5 i : 3 nb elem : 2
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 76end :95 a inserer :51
+start  :25midlle = 53end :74 a inserer :51
+start  :25midlle = 29end :44 a inserer :51
+start  :25midlle = 32end :44 a inserer :51
+start  :32midlle = 44end :44 a inserer :51
+start  :44INSERTED = 43
+petit a inserer :10
+emplacement dans grand a inserer :10
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {49 51 } {43 53 } {36 56 } {4 57 } {40 61 } {58 66 } {10 67 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{33 59 } {6 63 } {19 45 } {47 55 } {17 46 } {30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {9 73 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev5 jacob11 index : 4nbr element:2prev5end calcul :19
+index : 4 i : 3 nb elem : 2
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 74end :94 a inserer :46
+start  :25midlle = 51end :67 a inserer :46
+start  :25midlle = 29end :44 a inserer :46
+start  :25midlle = 32end :44 a inserer :46
+start  :32midlle = 44end :44 a inserer :46
+start  :44INSERTED = 49
+petit a inserer :8
+emplacement dans grand a inserer :10
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {17 46 } {49 51 } {43 53 } {36 56 } {4 57 } {40 61 } {58 66 } {10 67 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{33 59 } {6 63 } {19 45 } {47 55 } {30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {9 73 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev5 jacob11 index : 3nbr element:2prev5end calcul :19
+index : 3 i : 3 nb elem : 2
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 67end :93 a inserer :55
+start  :25midlle = 46end :66 a inserer :55
+start  :25midlle = 56end :66 a inserer :55
+start  :51midlle = 51end :53 a inserer :55
+start  :51midlle = 53end :53 a inserer :55
+start  :53INSERTED = 36
+petit a inserer :6
+emplacement dans grand a inserer :16
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {17 46 } {49 51 } {43 53 } {47 55 } {36 56 } {4 57 } {40 61 } {58 66 } {10 67 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{33 59 } {6 63 } {19 45 } {30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {9 73 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev5 jacob11 index : 2nbr element:2prev5end calcul :19
+index : 2 i : 3 nb elem : 2
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 66end :91 a inserer :45
+start  :25midlle = 46end :61 a inserer :45
+start  :25midlle = 29end :44 a inserer :45
+start  :25midlle = 32end :44 a inserer :45
+start  :32midlle = 44end :44 a inserer :45
+start  :44INSERTED = 17
+petit a inserer :4
+emplacement dans grand a inserer :10
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {49 51 } {43 53 } {47 55 } {36 56 } {4 57 } {40 61 } {58 66 } {10 67 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{33 59 } {6 63 } {30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {9 73 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev5 jacob11 index : 1nbr element:2prev5end calcul :19
+index : 1 i : 3 nb elem : 2
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 61end :90 a inserer :63
+start  :25midlle = 82end :90 a inserer :63
+start  :66midlle = 74end :80 a inserer :63
+start  :66midlle = 66end :67 a inserer :63
+start  :66INSERTED = 58
+petit a inserer :2
+emplacement dans grand a inserer :26
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {49 51 } {43 53 } {47 55 } {36 56 } {4 57 } {40 61 } {6 63 } {58 66 } {10 67 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{33 59 } {30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {9 73 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev5 jacob11 index : 0nbr element:2prev5end calcul :19
+index : 0 i : 3 nb elem : 2
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 61end :89 a inserer :59
+start  :25midlle = 45end :57 a inserer :59
+start  :25midlle = 53end :57 a inserer :59
+start  :46midlle = 56end :57 a inserer :59
+start  :55midlle = 57end :57 a inserer :59
+start  :57INSERTED = 40
+petit a inserer :0
+emplacement dans grand a inserer :24
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {49 51 } {43 53 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {58 66 } {10 67 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {9 73 } {35 75 } {14 86 } {60 62 } {5 65 }
+jacob : 21 prev : 11
+prev11 jacob21 index : 9nbr element:2prev11end calcul :43
+index : 9 i : 4 nb elem : 2
+endsize == 121
+endsize == 121
+if end
+endsize == 36
+midlle = 74end :100 a inserer :73
+start  :25midlle = 53end :67 a inserer :73
+start  :25midlle = 59end :67 a inserer :73
+start  :55midlle = 63end :67 a inserer :73
+start  :61midlle = 66end :67 a inserer :73
+start  :66midlle = 67end :67 a inserer :73
+start  :67INSERTED = 68
+petit a inserer :18
+emplacement dans grand a inserer :34
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {49 51 } {43 53 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {58 66 } {10 67 } {9 73 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {31 70 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev11 jacob21 index : 8nbr element:2prev11end calcul :43
+index : 8 i : 4 nb elem : 2
+endsize == 121
+endsize == 121
+if end
+endsize == 37
+midlle = 74end :100 a inserer :70
+start  :25midlle = 53end :73 a inserer :70
+start  :25midlle = 61end :73 a inserer :70
+start  :55midlle = 66end :73 a inserer :70
+start  :63midlle = 67end :73 a inserer :70
+start  :67midlle = 73end :73 a inserer :70
+start  :73INSERTED = 9
+petit a inserer :16
+emplacement dans grand a inserer :34
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {49 51 } {43 53 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {21 78 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev11 jacob21 index : 7nbr element:2prev11end calcul :43
+index : 7 i : 4 nb elem : 2
+endsize == 121
+endsize == 121
+if end
+endsize == 38
+midlle = 73end :100 a inserer :78
+start  :25midlle = 90end :100 a inserer :78
+start  :74midlle = 83end :89 a inserer :78
+start  :74midlle = 76end :82 a inserer :78
+start  :74midlle = 80end :82 a inserer :78
+start  :80INSERTED = 34
+petit a inserer :14
+emplacement dans grand a inserer :42
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {49 51 } {43 53 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {21 78 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {42 54 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev11 jacob21 index : 6nbr element:2prev11end calcul :43
+index : 6 i : 4 nb elem : 2
+endsize == 121
+endsize == 121
+if end
+endsize == 39
+midlle = 74end :100 a inserer :54
+start  :25midlle = 55end :73 a inserer :54
+start  :25midlle = 44end :53 a inserer :54
+start  :25midlle = 46end :53 a inserer :54
+start  :45midlle = 51end :53 a inserer :54
+start  :51midlle = 53end :53 a inserer :54
+start  :53INSERTED = 47
+petit a inserer :12
+emplacement dans grand a inserer :18
+c'est trie
+PRINT GRAND
+{11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {49 51 } {43 53 } {42 54 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {21 78 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {1 12 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev11 jacob21 index : 5nbr element:2prev11end calcul :43
+index : 5 i : 4 nb elem : 2
+endsize == 121
+endsize == 121
+if end
+endsize == 40
+midlle = 73end :100 a inserer :12
+start  :25midlle = 54end :70 a inserer :12
+start  :25midlle = 44end :53 a inserer :12
+start  :25midlle = 26end :32 a inserer :12
+start  :25midlle = 25end :25 a inserer :12
+start  :25INSERTED = 11
+petit a inserer :10
+emplacement dans grand a inserer :0
+c'est trie
+PRINT GRAND
+{1 12 } {11 25 } {22 26 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {49 51 } {43 53 } {42 54 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {21 78 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{30 39 } {2 7 } {41 50 } {37 77 } {18 28 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev11 jacob21 index : 4nbr element:2prev11end calcul :43
+index : 4 i : 4 nb elem : 2
+endsize == 121
+endsize == 121
+if end
+endsize == 41
+midlle = 73end :100 a inserer :28
+start  :12midlle = 53end :70 a inserer :28
+start  :12midlle = 32end :51 a inserer :28
+start  :12midlle = 25end :29 a inserer :28
+start  :12midlle = 26end :29 a inserer :28
+start  :26midlle = 29end :29 a inserer :28
+start  :29INSERTED = 16
+petit a inserer :8
+emplacement dans grand a inserer :6
+c'est trie
+PRINT GRAND
+{1 12 } {11 25 } {22 26 } {18 28 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {49 51 } {43 53 } {42 54 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {21 78 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{30 39 } {2 7 } {41 50 } {37 77 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev11 jacob21 index : 3nbr element:2prev11end calcul :43
+index : 3 i : 4 nb elem : 2
+endsize == 121
+endsize == 121
+if end
+endsize == 42
+midlle = 70end :100 a inserer :77
+start  :12midlle = 89end :100 a inserer :77
+start  :73midlle = 80end :88 a inserer :77
+start  :73midlle = 74end :78 a inserer :77
+start  :73midlle = 76end :78 a inserer :77
+start  :76midlle = 78end :78 a inserer :77
+start  :78INSERTED = 21
+petit a inserer :6
+emplacement dans grand a inserer :48
+c'est trie
+PRINT GRAND
+{1 12 } {11 25 } {22 26 } {18 28 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {49 51 } {43 53 } {42 54 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {37 77 } {21 78 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{30 39 } {2 7 } {41 50 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev11 jacob21 index : 2nbr element:2prev11end calcul :43
+index : 2 i : 4 nb elem : 2
+endsize == 121
+endsize == 121
+if end
+endsize == 43
+midlle = 73end :100 a inserer :50
+start  :12midlle = 53end :70 a inserer :50
+start  :12midlle = 29end :51 a inserer :50
+start  :12midlle = 45end :51 a inserer :50
+start  :32midlle = 46end :51 a inserer :50
+start  :46midlle = 51end :51 a inserer :50
+start  :51INSERTED = 49
+petit a inserer :4
+emplacement dans grand a inserer :18
+c'est trie
+PRINT GRAND
+{1 12 } {11 25 } {22 26 } {18 28 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {41 50 } {49 51 } {43 53 } {42 54 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {37 77 } {21 78 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{30 39 } {2 7 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev11 jacob21 index : 1nbr element:2prev11end calcul :43
+index : 1 i : 4 nb elem : 2
+endsize == 121
+endsize == 121
+if end
+endsize == 44
+midlle = 70end :100 a inserer :7
+start  :12midlle = 51end :67 a inserer :7
+start  :12midlle = 29end :50 a inserer :7
+start  :12midlle = 25end :28 a inserer :7
+start  :12midlle = 12end :12 a inserer :7
+start  :12INSERTED = 1
+petit a inserer :2
+emplacement dans grand a inserer :0
+c'est trie
+PRINT GRAND
+{2 7 } {1 12 } {11 25 } {22 26 } {18 28 } {16 29 } {3 32 } {24 44 } {19 45 } {17 46 } {41 50 } {49 51 } {43 53 } {42 54 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {37 77 } {21 78 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{30 39 } {35 75 } {14 86 } {60 62 } {5 65 }
+prev11 jacob21 index : 0nbr element:2prev11end calcul :43
+index : 0 i : 4 nb elem : 2
+endsize == 121
+endsize == 121
+if end
+endsize == 45
+midlle = 70end :100 a inserer :39
+start  :7midlle = 50end :67 a inserer :39
+start  :7midlle = 28end :46 a inserer :39
+start  :7midlle = 44end :46 a inserer :39
+start  :29midlle = 29end :32 a inserer :39
+start  :29midlle = 32end :32 a inserer :39
+start  :32INSERTED = 24
+petit a inserer :0
+emplacement dans grand a inserer :14
+c'est trie
+PRINT GRAND
+{2 7 } {1 12 } {11 25 } {22 26 } {18 28 } {16 29 } {3 32 } {30 39 } {24 44 } {19 45 } {17 46 } {41 50 } {49 51 } {43 53 } {42 54 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {37 77 } {21 78 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{35 75 } {14 86 } {60 62 } {5 65 }
+jacob : 43 prev : 21
+prev21 jacob43 index : 3nbr element:2prev21end calcul :83
+index : 3 i : 5 nb elem : 2
+endsize == 441
+endsize == 441
+if end
+endsize == 46
+midlle = 67end :100 a inserer :65
+start  :7midlle = 46end :66 a inserer :65
+start  :7midlle = 56end :66 a inserer :65
+start  :50midlle = 61end :66 a inserer :65
+start  :57midlle = 63end :66 a inserer :65
+start  :63midlle = 66end :66 a inserer :65
+start  :66INSERTED = 58
+petit a inserer :6
+emplacement dans grand a inserer :42
+c'est trie
+PRINT GRAND
+{2 7 } {1 12 } {11 25 } {22 26 } {18 28 } {16 29 } {3 32 } {30 39 } {24 44 } {19 45 } {17 46 } {41 50 } {49 51 } {43 53 } {42 54 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {6 63 } {5 65 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {37 77 } {21 78 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{35 75 } {14 86 } {60 62 }
+prev21 jacob43 index : 2nbr element:2prev21end calcul :83
+index : 2 i : 5 nb elem : 2
+endsize == 441
+endsize == 441
+if end
+endsize == 47
+midlle = 67end :100 a inserer :62
+start  :7midlle = 50end :66 a inserer :62
+start  :7midlle = 57end :66 a inserer :62
+start  :51midlle = 63end :66 a inserer :62
+start  :59midlle = 59end :61 a inserer :62
+start  :59midlle = 61end :61 a inserer :62
+start  :61INSERTED = 6
+petit a inserer :4
+emplacement dans grand a inserer :40
+c'est trie
+PRINT GRAND
+{2 7 } {1 12 } {11 25 } {22 26 } {18 28 } {16 29 } {3 32 } {30 39 } {24 44 } {19 45 } {17 46 } {41 50 } {49 51 } {43 53 } {42 54 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {60 62 } {6 63 } {5 65 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {37 77 } {21 78 } {34 80 } {72 82 } {8 83 } {71 85 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{35 75 } {14 86 }
+prev21 jacob43 index : 1nbr element:2prev21end calcul :83
+index : 1 i : 5 nb elem : 2
+endsize == 441
+endsize == 441
+if end
+endsize == 48
+midlle = 66end :100 a inserer :86
+start  :7midlle = 87end :100 a inserer :86
+start  :67midlle = 77end :85 a inserer :86
+start  :67midlle = 82end :85 a inserer :86
+start  :78midlle = 83end :85 a inserer :86
+start  :83midlle = 85end :85 a inserer :86
+start  :85INSERTED = 20
+petit a inserer :2
+emplacement dans grand a inserer :70
+c'est trie
+PRINT GRAND
+{2 7 } {1 12 } {11 25 } {22 26 } {18 28 } {16 29 } {3 32 } {30 39 } {24 44 } {19 45 } {17 46 } {41 50 } {49 51 } {43 53 } {42 54 } {47 55 } {36 56 } {4 57 } {33 59 } {40 61 } {60 62 } {6 63 } {5 65 } {58 66 } {10 67 } {31 70 } {9 73 } {68 74 } {64 76 } {37 77 } {21 78 } {34 80 } {72 82 } {8 83 } {71 85 } {14 86 } {20 87 } {81 88 } {52 89 } {23 90 } {13 91 } {38 93 } {15 94 } {79 95 } {69 96 } {48 97 } {84 98 } {92 99 } {27 100 }
+PRINT petit
+{35 75 }
+prev21 jacob43 index : 0nbr element:2prev21end calcul :83
+index : 0 i : 5 nb elem : 2
+endsize == 441
+endsize == 441
+if end
+endsize == 49
+midlle = 67end :100 a inserer :75
+start  :7midlle = 87end :100 a inserer :75
+start  :70midlle = 78end :86 a inserer :75
+start  :70midlle = 74end :77 a inserer :75
+start  :70midlle = 76end :77 a inserer :75
+start  :76INSERTED = 64
+petit a inserer :0
+emplacement dans grand a inserer :56
+fin d'une eape de recusion
+
+
+apres recusrion
+{2 } {7 } {1 } {12 } {11 } {25 } {22 } {26 } {18 } {28 } {16 } {29 } {3 } {32 } {30 } {39 } {24 } {44 } {19 } {45 } {17 } {46 } {41 } {50 } {49 } {51 } {43 } {53 } {42 } {54 } {47 } {55 } {36 } {56 } {4 } {57 } {33 } {59 } {40 } {61 } {60 } {62 } {6 } {63 } {5 } {65 } {58 } {66 } {10 } {67 } {31 } {70 } {9 } {73 } {68 } {74 } {35 } {75 } {64 } {76 } {37 } {77 } {21 } {78 } {34 } {80 } {72 } {82 } {8 } {83 } {71 } {85 } {14 } {86 } {20 } {87 } {81 } {88 } {52 } {89 } {23 } {90 } {13 } {91 } {38 } {93 } {15 } {94 } {79 } {95 } {69 } {96 } {48 } {97 } {84 } {98 } {92 } {99 } {27 } {100 }
+nb pair : 50 size elem : 1
+c'est trie
+PRINT GRAND
+{2 } {7 } {12 } {25 } {26 } {28 } {29 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{1 } {11 } {22 } {18 } {16 } {3 } {30 } {24 } {19 } {17 } {41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {60 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+jacob : 3 prev : 1
+prev1 jacob3 index : 1nbr element:1prev1end calcul :1
+index : 1 i : 1 nb elem : 1
+endsize == 1
+endsize == 3
+endsize == 3
+midlle = 7end :12 a inserer :11
+start  :2midlle = 12end :12 a inserer :11
+start  :12INSERTED = 12
+petit a inserer :1
+emplacement dans grand a inserer :2
+c'est trie
+PRINT GRAND
+{2 } {7 } {11 } {12 } {25 } {26 } {28 } {29 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{1 } {22 } {18 } {16 } {3 } {30 } {24 } {19 } {17 } {41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {60 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev1 jacob3 index : 0nbr element:1prev1end calcul :1
+index : 0 i : 1 nb elem : 1
+endsize == 1
+endsize == 3
+endsize == 3
+midlle = 7end :11 a inserer :1
+start  :2midlle = 2end :2 a inserer :1
+start  :2INSERTED = 2
+petit a inserer :0
+emplacement dans grand a inserer :0
+c'est trie
+PRINT GRAND
+{1 } {2 } {7 } {11 } {12 } {25 } {26 } {28 } {29 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{22 } {18 } {16 } {3 } {30 } {24 } {19 } {17 } {41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {60 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+jacob : 5 prev : 3
+prev3 jacob5 index : 1nbr element:1prev3end calcul :5
+index : 1 i : 2 nb elem : 1
+endsize == 9
+endsize == 9
+endsize == 9
+midlle = 12end :29 a inserer :18
+start  :1midlle = 26end :29 a inserer :18
+start  :25midlle = 25end :25 a inserer :18
+start  :25INSERTED = 25
+petit a inserer :1
+emplacement dans grand a inserer :5
+c'est trie
+PRINT GRAND
+{1 } {2 } {7 } {11 } {12 } {18 } {25 } {26 } {28 } {29 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{22 } {16 } {3 } {30 } {24 } {19 } {17 } {41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {60 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev3 jacob5 index : 0nbr element:1prev3end calcul :5
+index : 0 i : 2 nb elem : 1
+endsize == 9
+endsize == 9
+endsize == 9
+midlle = 12end :28 a inserer :22
+start  :1midlle = 25end :28 a inserer :22
+start  :18midlle = 18end :18 a inserer :22
+start  :18INSERTED = 25
+petit a inserer :0
+emplacement dans grand a inserer :6
+c'est trie
+PRINT GRAND
+{1 } {2 } {7 } {11 } {12 } {18 } {22 } {25 } {26 } {28 } {29 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{16 } {3 } {30 } {24 } {19 } {17 } {41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {60 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+jacob : 11 prev : 5
+prev5 jacob11 index : 5nbr element:1prev5end calcul :9
+index : 5 i : 3 nb elem : 1
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 39end :61 a inserer :17
+start  :1midlle = 18end :32 a inserer :17
+start  :1midlle = 7end :12 a inserer :17
+start  :1midlle = 11end :12 a inserer :17
+start  :11midlle = 12end :12 a inserer :17
+start  :12INSERTED = 18
+petit a inserer :5
+emplacement dans grand a inserer :5
+c'est trie
+PRINT GRAND
+{1 } {2 } {7 } {11 } {12 } {17 } {18 } {22 } {25 } {26 } {28 } {29 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{16 } {3 } {30 } {24 } {19 } {41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {60 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev5 jacob11 index : 4nbr element:1prev5end calcul :9
+index : 4 i : 3 nb elem : 1
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 32end :59 a inserer :19
+start  :1midlle = 17end :29 a inserer :19
+start  :1midlle = 25end :29 a inserer :19
+start  :18midlle = 18end :22 a inserer :19
+start  :18midlle = 22end :22 a inserer :19
+start  :22INSERTED = 22
+petit a inserer :4
+emplacement dans grand a inserer :7
+c'est trie
+PRINT GRAND
+{1 } {2 } {7 } {11 } {12 } {17 } {18 } {19 } {22 } {25 } {26 } {28 } {29 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{16 } {3 } {30 } {24 } {41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {60 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev5 jacob11 index : 3nbr element:1prev5end calcul :9
+index : 3 i : 3 nb elem : 1
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 29end :57 a inserer :24
+start  :1midlle = 17end :28 a inserer :24
+start  :1midlle = 22end :28 a inserer :24
+start  :18midlle = 26end :28 a inserer :24
+start  :25midlle = 25end :25 a inserer :24
+start  :25INSERTED = 25
+petit a inserer :3
+emplacement dans grand a inserer :9
+c'est trie
+PRINT GRAND
+{1 } {2 } {7 } {11 } {12 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{16 } {3 } {30 } {41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {60 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev5 jacob11 index : 2nbr element:1prev5end calcul :9
+index : 2 i : 3 nb elem : 1
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 28end :56 a inserer :30
+start  :1midlle = 46end :56 a inserer :30
+start  :29midlle = 39end :45 a inserer :30
+start  :29midlle = 29end :32 a inserer :30
+start  :29midlle = 32end :32 a inserer :30
+start  :32INSERTED = 32
+petit a inserer :2
+emplacement dans grand a inserer :14
+c'est trie
+PRINT GRAND
+{1 } {2 } {7 } {11 } {12 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{16 } {3 } {41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {60 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev5 jacob11 index : 1nbr element:1prev5end calcul :9
+index : 1 i : 3 nb elem : 1
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 28end :55 a inserer :3
+start  :1midlle = 17end :26 a inserer :3
+start  :1midlle = 7end :12 a inserer :3
+start  :1midlle = 1end :2 a inserer :3
+start  :1midlle = 2end :2 a inserer :3
+start  :2INSERTED = 7
+petit a inserer :1
+emplacement dans grand a inserer :2
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {7 } {11 } {12 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{16 } {41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {60 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev5 jacob11 index : 0nbr element:1prev5end calcul :9
+index : 0 i : 3 nb elem : 1
+endsize == 25
+endsize == 25
+endsize == 25
+midlle = 26end :54 a inserer :16
+start  :1midlle = 12end :25 a inserer :16
+start  :1midlle = 19end :25 a inserer :16
+start  :17midlle = 17end :18 a inserer :16
+start  :17INSERTED = 17
+petit a inserer :0
+emplacement dans grand a inserer :6
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {60 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+jacob : 21 prev : 11
+prev11 jacob21 index : 9nbr element:1prev11end calcul :21
+index : 9 i : 4 nb elem : 1
+endsize == 121
+endsize == 121
+if end
+endsize == 61
+midlle = 61end :100 a inserer :60
+start  :1midlle = 28end :59 a inserer :60
+start  :1midlle = 50end :59 a inserer :60
+start  :29midlle = 55end :59 a inserer :60
+start  :51midlle = 57end :59 a inserer :60
+start  :56midlle = 59end :59 a inserer :60
+start  :59INSERTED = 61
+petit a inserer :9
+emplacement dans grand a inserer :30
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {39 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {40 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev11 jacob21 index : 8nbr element:1prev11end calcul :21
+index : 8 i : 4 nb elem : 1
+endsize == 121
+endsize == 121
+if end
+endsize == 62
+midlle = 60end :100 a inserer :40
+start  :1midlle = 28end :59 a inserer :40
+start  :1midlle = 50end :59 a inserer :40
+start  :29midlle = 39end :46 a inserer :40
+start  :29midlle = 45end :46 a inserer :40
+start  :44midlle = 44end :44 a inserer :40
+start  :44INSERTED = 44
+petit a inserer :8
+emplacement dans grand a inserer :19
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {39 } {40 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{41 } {49 } {43 } {42 } {47 } {36 } {4 } {33 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev11 jacob21 index : 7nbr element:1prev11end calcul :21
+index : 7 i : 4 nb elem : 1
+endsize == 121
+endsize == 121
+if end
+endsize == 63
+midlle = 60end :100 a inserer :33
+start  :1midlle = 29end :59 a inserer :33
+start  :1midlle = 50end :59 a inserer :33
+start  :30midlle = 40end :46 a inserer :33
+start  :30midlle = 32end :39 a inserer :33
+start  :30midlle = 39end :39 a inserer :33
+start  :39INSERTED = 39
+petit a inserer :7
+emplacement dans grand a inserer :18
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {39 } {40 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{41 } {49 } {43 } {42 } {47 } {36 } {4 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev11 jacob21 index : 6nbr element:1prev11end calcul :21
+index : 6 i : 4 nb elem : 1
+endsize == 121
+endsize == 121
+if end
+endsize == 64
+midlle = 59end :100 a inserer :4
+start  :1midlle = 29end :57 a inserer :4
+start  :1midlle = 17end :28 a inserer :4
+start  :1midlle = 7end :16 a inserer :4
+start  :1midlle = 2end :3 a inserer :4
+start  :1midlle = 3end :3 a inserer :4
+start  :3INSERTED = 7
+petit a inserer :6
+emplacement dans grand a inserer :3
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {39 } {40 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{41 } {49 } {43 } {42 } {47 } {36 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev11 jacob21 index : 5nbr element:1prev11end calcul :21
+index : 5 i : 4 nb elem : 1
+endsize == 121
+endsize == 121
+if end
+endsize == 65
+midlle = 59end :100 a inserer :36
+start  :1midlle = 28end :57 a inserer :36
+start  :1midlle = 45end :57 a inserer :36
+start  :29midlle = 33end :44 a inserer :36
+start  :29midlle = 40end :44 a inserer :36
+start  :39midlle = 39end :39 a inserer :36
+start  :39INSERTED = 39
+petit a inserer :5
+emplacement dans grand a inserer :20
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {39 } {40 } {44 } {45 } {46 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{41 } {49 } {43 } {42 } {47 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev11 jacob21 index : 4nbr element:1prev11end calcul :21
+index : 4 i : 4 nb elem : 1
+endsize == 121
+endsize == 121
+if end
+endsize == 66
+midlle = 57end :100 a inserer :47
+start  :1midlle = 28end :56 a inserer :47
+start  :1midlle = 44end :56 a inserer :47
+start  :29midlle = 51end :56 a inserer :47
+start  :45midlle = 46end :50 a inserer :47
+start  :45midlle = 50end :50 a inserer :47
+start  :50INSERTED = 50
+petit a inserer :4
+emplacement dans grand a inserer :26
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {39 } {40 } {44 } {45 } {46 } {47 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{41 } {49 } {43 } {42 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev11 jacob21 index : 3nbr element:1prev11end calcul :21
+index : 3 i : 4 nb elem : 1
+endsize == 121
+endsize == 121
+if end
+endsize == 67
+midlle = 57end :100 a inserer :42
+start  :1midlle = 29end :56 a inserer :42
+start  :1midlle = 45end :56 a inserer :42
+start  :30midlle = 36end :44 a inserer :42
+start  :30midlle = 40end :44 a inserer :42
+start  :39midlle = 44end :44 a inserer :42
+start  :44INSERTED = 44
+petit a inserer :3
+emplacement dans grand a inserer :23
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {39 } {40 } {42 } {44 } {45 } {46 } {47 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{41 } {49 } {43 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev11 jacob21 index : 2nbr element:1prev11end calcul :21
+index : 2 i : 4 nb elem : 1
+endsize == 121
+endsize == 121
+if end
+endsize == 68
+midlle = 56end :100 a inserer :43
+start  :1midlle = 29end :55 a inserer :43
+start  :1midlle = 44end :55 a inserer :43
+start  :30midlle = 36end :42 a inserer :43
+start  :30midlle = 40end :42 a inserer :43
+start  :39midlle = 42end :42 a inserer :43
+start  :42INSERTED = 44
+petit a inserer :2
+emplacement dans grand a inserer :24
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {39 } {40 } {42 } {43 } {44 } {45 } {46 } {47 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{41 } {49 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev11 jacob21 index : 1nbr element:1prev11end calcul :21
+index : 1 i : 4 nb elem : 1
+endsize == 121
+endsize == 121
+if end
+endsize == 69
+midlle = 56end :100 a inserer :49
+start  :1midlle = 29end :55 a inserer :49
+start  :1midlle = 44end :55 a inserer :49
+start  :30midlle = 50end :55 a inserer :49
+start  :45midlle = 46end :47 a inserer :49
+start  :45midlle = 47end :47 a inserer :49
+start  :47INSERTED = 50
+petit a inserer :1
+emplacement dans grand a inserer :29
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {39 } {40 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{41 } {6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev11 jacob21 index : 0nbr element:1prev11end calcul :21
+index : 0 i : 4 nb elem : 1
+endsize == 121
+endsize == 121
+if end
+endsize == 70
+midlle = 55end :100 a inserer :41
+start  :1midlle = 29end :54 a inserer :41
+start  :1midlle = 44end :54 a inserer :41
+start  :30midlle = 36end :43 a inserer :41
+start  :30midlle = 40end :43 a inserer :41
+start  :39midlle = 42end :43 a inserer :41
+start  :42INSERTED = 42
+petit a inserer :0
+emplacement dans grand a inserer :23
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {38 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+jacob : 43 prev : 21
+prev21 jacob43 index : 21nbr element:1prev21end calcul :41
+index : 21 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 71
+midlle = 55end :100 a inserer :38
+start  :1midlle = 30end :54 a inserer :38
+start  :1midlle = 44end :54 a inserer :38
+start  :32midlle = 39end :43 a inserer :38
+start  :32midlle = 33end :36 a inserer :38
+start  :32midlle = 36end :36 a inserer :38
+start  :36INSERTED = 39
+petit a inserer :21
+emplacement dans grand a inserer :21
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {13 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 20nbr element:1prev21end calcul :41
+index : 20 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 72
+midlle = 54end :100 a inserer :13
+start  :1midlle = 30end :53 a inserer :13
+start  :1midlle = 17end :29 a inserer :13
+start  :1midlle = 4end :16 a inserer :13
+start  :1midlle = 11end :16 a inserer :13
+start  :7midlle = 12end :16 a inserer :13
+start  :12midlle = 16end :16 a inserer :13
+start  :16INSERTED = 16
+petit a inserer :20
+emplacement dans grand a inserer :7
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {13 } {16 } {17 } {18 } {19 } {22 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {23 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 19nbr element:1prev21end calcul :41
+index : 19 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 73
+midlle = 54end :100 a inserer :23
+start  :1midlle = 29end :53 a inserer :23
+start  :1midlle = 16end :28 a inserer :23
+start  :1midlle = 22end :28 a inserer :23
+start  :17midlle = 25end :28 a inserer :23
+start  :24midlle = 24end :24 a inserer :23
+start  :24INSERTED = 24
+petit a inserer :19
+emplacement dans grand a inserer :13
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {13 } {16 } {17 } {18 } {19 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {52 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 18nbr element:1prev21end calcul :41
+index : 18 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 74
+midlle = 53end :100 a inserer :52
+start  :1midlle = 28end :51 a inserer :52
+start  :1midlle = 41end :51 a inserer :52
+start  :29midlle = 46end :51 a inserer :52
+start  :42midlle = 49end :51 a inserer :52
+start  :47midlle = 50end :51 a inserer :52
+start  :50midlle = 51end :51 a inserer :52
+start  :51INSERTED = 53
+petit a inserer :18
+emplacement dans grand a inserer :36
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {13 } {16 } {17 } {18 } {19 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {81 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 17nbr element:1prev21end calcul :41
+index : 17 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 75
+midlle = 53end :100 a inserer :81
+start  :1midlle = 78end :100 a inserer :81
+start  :54midlle = 90end :100 a inserer :81
+start  :80midlle = 85end :89 a inserer :81
+start  :80midlle = 82end :83 a inserer :81
+start  :80midlle = 80end :80 a inserer :81
+start  :80INSERTED = 82
+petit a inserer :17
+emplacement dans grand a inserer :58
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {13 } {16 } {17 } {18 } {19 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {20 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 16nbr element:1prev21end calcul :41
+index : 16 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 76
+midlle = 53end :100 a inserer :20
+start  :1midlle = 29end :52 a inserer :20
+start  :1midlle = 16end :28 a inserer :20
+start  :1midlle = 23end :28 a inserer :20
+start  :17midlle = 18end :22 a inserer :20
+start  :17midlle = 19end :22 a inserer :20
+start  :19midlle = 22end :22 a inserer :20
+start  :22INSERTED = 22
+petit a inserer :16
+emplacement dans grand a inserer :12
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {13 } {16 } {17 } {18 } {19 } {20 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {14 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 15nbr element:1prev21end calcul :41
+index : 15 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 77
+midlle = 53end :100 a inserer :14
+start  :1midlle = 28end :52 a inserer :14
+start  :1midlle = 16end :26 a inserer :14
+start  :1midlle = 4end :13 a inserer :14
+start  :1midlle = 11end :13 a inserer :14
+start  :7midlle = 12end :13 a inserer :14
+start  :12midlle = 13end :13 a inserer :14
+start  :13INSERTED = 16
+petit a inserer :15
+emplacement dans grand a inserer :8
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {71 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 14nbr element:1prev21end calcul :41
+index : 14 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 78
+midlle = 52end :100 a inserer :71
+start  :1midlle = 78end :100 a inserer :71
+start  :53midlle = 63end :77 a inserer :71
+start  :53midlle = 73end :77 a inserer :71
+start  :65midlle = 66end :70 a inserer :71
+start  :65midlle = 67end :70 a inserer :71
+start  :67midlle = 70end :70 a inserer :71
+start  :70INSERTED = 73
+petit a inserer :14
+emplacement dans grand a inserer :53
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {71 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {8 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 13nbr element:1prev21end calcul :41
+index : 13 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 79
+midlle = 53end :100 a inserer :8
+start  :1midlle = 28end :52 a inserer :8
+start  :1midlle = 16end :26 a inserer :8
+start  :1midlle = 7end :14 a inserer :8
+start  :1midlle = 12end :14 a inserer :8
+start  :11midlle = 11end :11 a inserer :8
+start  :11INSERTED = 11
+petit a inserer :13
+emplacement dans grand a inserer :5
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {71 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {72 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 12nbr element:1prev21end calcul :41
+index : 12 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 80
+midlle = 52end :100 a inserer :72
+start  :1midlle = 77end :100 a inserer :72
+start  :53midlle = 63end :76 a inserer :72
+start  :53midlle = 71end :76 a inserer :72
+start  :65midlle = 74end :76 a inserer :72
+start  :73midlle = 73end :73 a inserer :72
+start  :73INSERTED = 73
+petit a inserer :12
+emplacement dans grand a inserer :55
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {34 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 11nbr element:1prev21end calcul :41
+index : 11 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 81
+midlle = 53end :100 a inserer :34
+start  :1midlle = 26end :52 a inserer :34
+start  :1midlle = 41end :52 a inserer :34
+start  :28midlle = 33end :40 a inserer :34
+start  :28midlle = 38end :40 a inserer :34
+start  :36midlle = 36end :36 a inserer :34
+start  :36INSERTED = 36
+petit a inserer :11
+emplacement dans grand a inserer :25
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {34 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {21 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 10nbr element:1prev21end calcul :41
+index : 10 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 82
+midlle = 52end :100 a inserer :21
+start  :1midlle = 26end :51 a inserer :21
+start  :1midlle = 14end :25 a inserer :21
+start  :1midlle = 20end :25 a inserer :21
+start  :16midlle = 23end :25 a inserer :21
+start  :22midlle = 22end :22 a inserer :21
+start  :22INSERTED = 22
+petit a inserer :10
+emplacement dans grand a inserer :15
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {34 } {36 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {37 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 9nbr element:1prev21end calcul :41
+index : 9 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 83
+midlle = 52end :100 a inserer :37
+start  :1midlle = 26end :51 a inserer :37
+start  :1midlle = 40end :51 a inserer :37
+start  :28midlle = 33end :39 a inserer :37
+start  :28midlle = 36end :39 a inserer :37
+start  :34midlle = 38end :39 a inserer :37
+start  :38INSERTED = 38
+petit a inserer :9
+emplacement dans grand a inserer :28
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {34 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {65 } {66 } {67 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {64 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 8nbr element:1prev21end calcul :41
+index : 8 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 84
+midlle = 51end :100 a inserer :64
+start  :1midlle = 76end :100 a inserer :64
+start  :52midlle = 62end :75 a inserer :64
+start  :52midlle = 70end :75 a inserer :64
+start  :63midlle = 65end :67 a inserer :64
+start  :63midlle = 63end :63 a inserer :64
+start  :63INSERTED = 65
+petit a inserer :8
+emplacement dans grand a inserer :53
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {34 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {35 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 7nbr element:1prev21end calcul :41
+index : 7 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 85
+midlle = 52end :100 a inserer :35
+start  :1midlle = 26end :51 a inserer :35
+start  :1midlle = 40end :51 a inserer :35
+start  :28midlle = 33end :39 a inserer :35
+start  :28midlle = 37end :39 a inserer :35
+start  :34midlle = 34end :36 a inserer :35
+start  :34midlle = 36end :36 a inserer :35
+start  :36INSERTED = 36
+petit a inserer :7
+emplacement dans grand a inserer :27
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {68 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 6nbr element:1prev21end calcul :41
+index : 6 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 86
+midlle = 51end :100 a inserer :68
+start  :1midlle = 76end :100 a inserer :68
+start  :52midlle = 63end :75 a inserer :68
+start  :52midlle = 70end :75 a inserer :68
+start  :64midlle = 65end :67 a inserer :68
+start  :64midlle = 66end :67 a inserer :68
+start  :66midlle = 67end :67 a inserer :68
+start  :67INSERTED = 70
+petit a inserer :6
+emplacement dans grand a inserer :58
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {9 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 5nbr element:1prev21end calcul :41
+index : 5 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 87
+midlle = 52end :100 a inserer :9
+start  :1midlle = 28end :51 a inserer :9
+start  :1midlle = 16end :26 a inserer :9
+start  :1midlle = 7end :14 a inserer :9
+start  :1midlle = 12end :14 a inserer :9
+start  :8midlle = 8end :11 a inserer :9
+start  :8midlle = 11end :11 a inserer :9
+start  :11INSERTED = 11
+petit a inserer :5
+emplacement dans grand a inserer :6
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {9 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {31 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 4nbr element:1prev21end calcul :41
+index : 4 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 88
+midlle = 51end :100 a inserer :31
+start  :1midlle = 26end :50 a inserer :31
+start  :1midlle = 39end :50 a inserer :31
+start  :28midlle = 33end :38 a inserer :31
+start  :28midlle = 29end :32 a inserer :31
+start  :28midlle = 30end :32 a inserer :31
+start  :30midlle = 32end :32 a inserer :31
+start  :32INSERTED = 32
+petit a inserer :4
+emplacement dans grand a inserer :25
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {9 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {31 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {10 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 3nbr element:1prev21end calcul :41
+index : 3 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 89
+midlle = 51end :100 a inserer :10
+start  :1midlle = 26end :50 a inserer :10
+start  :1midlle = 14end :25 a inserer :10
+start  :1midlle = 7end :13 a inserer :10
+start  :1midlle = 11end :13 a inserer :10
+start  :8midlle = 8end :9 a inserer :10
+start  :8midlle = 9end :9 a inserer :10
+start  :9INSERTED = 11
+petit a inserer :3
+emplacement dans grand a inserer :7
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {9 } {10 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {31 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {58 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 2nbr element:1prev21end calcul :41
+index : 2 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 90
+midlle = 50end :100 a inserer :58
+start  :1midlle = 75end :100 a inserer :58
+start  :51midlle = 62end :74 a inserer :58
+start  :51midlle = 55end :61 a inserer :58
+start  :51midlle = 59end :61 a inserer :58
+start  :56midlle = 56end :57 a inserer :58
+start  :56midlle = 57end :57 a inserer :58
+start  :57INSERTED = 59
+petit a inserer :2
+emplacement dans grand a inserer :52
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {7 } {8 } {9 } {10 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {31 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {58 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {5 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 1nbr element:1prev21end calcul :41
+index : 1 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 91
+midlle = 51end :100 a inserer :5
+start  :1midlle = 26end :50 a inserer :5
+start  :1midlle = 13end :25 a inserer :5
+start  :1midlle = 7end :12 a inserer :5
+start  :1midlle = 2end :4 a inserer :5
+start  :1midlle = 3end :4 a inserer :5
+start  :3midlle = 4end :4 a inserer :5
+start  :4INSERTED = 7
+petit a inserer :1
+emplacement dans grand a inserer :4
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {5 } {7 } {8 } {9 } {10 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {31 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {58 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{6 } {15 } {79 } {69 } {48 } {84 } {92 } {27 }
+prev21 jacob43 index : 0nbr element:1prev21end calcul :41
+index : 0 i : 5 nb elem : 1
+endsize == 441
+endsize == 441
+if end
+endsize == 92
+midlle = 50end :100 a inserer :6
+start  :1midlle = 25end :49 a inserer :6
+start  :1midlle = 12end :24 a inserer :6
+start  :1midlle = 5end :11 a inserer :6
+start  :1midlle = 9end :11 a inserer :6
+start  :7midlle = 7end :8 a inserer :6
+start  :7INSERTED = 7
+petit a inserer :0
+emplacement dans grand a inserer :5
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {5 } {6 } {7 } {8 } {9 } {10 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {28 } {29 } {30 } {31 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {58 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{15 } {79 } {69 } {48 } {84 } {92 } {27 }
+jacob : 85 prev : 43
+prev43 jacob85 index : 6nbr element:1prev43end calcul :85
+index : 6 i : 6 nb elem : 1
+endsize == 1849
+endsize == 1849
+if end
+endsize == 93
+midlle = 50end :100 a inserer :27
+start  :1midlle = 24end :49 a inserer :27
+start  :1midlle = 37end :49 a inserer :27
+start  :25midlle = 31end :36 a inserer :27
+start  :25midlle = 28end :30 a inserer :27
+start  :25midlle = 25end :26 a inserer :27
+start  :25midlle = 26end :26 a inserer :27
+start  :26INSERTED = 28
+petit a inserer :6
+emplacement dans grand a inserer :25
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {5 } {6 } {7 } {8 } {9 } {10 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {27 } {28 } {29 } {30 } {31 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {58 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{15 } {79 } {69 } {48 } {84 } {92 }
+prev43 jacob85 index : 5nbr element:1prev43end calcul :85
+index : 5 i : 6 nb elem : 1
+endsize == 1849
+endsize == 1849
+if end
+endsize == 94
+midlle = 49end :100 a inserer :92
+start  :1midlle = 74end :100 a inserer :92
+start  :50midlle = 88end :100 a inserer :92
+start  :75midlle = 95end :100 a inserer :92
+start  :89midlle = 91end :94 a inserer :92
+start  :89midlle = 93end :94 a inserer :92
+start  :93INSERTED = 93
+petit a inserer :5
+emplacement dans grand a inserer :86
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {5 } {6 } {7 } {8 } {9 } {10 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {27 } {28 } {29 } {30 } {31 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {58 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {92 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{15 } {79 } {69 } {48 } {84 }
+prev43 jacob85 index : 4nbr element:1prev43end calcul :85
+index : 4 i : 6 nb elem : 1
+endsize == 1849
+endsize == 1849
+if end
+endsize == 95
+midlle = 50end :100 a inserer :84
+start  :1midlle = 75end :100 a inserer :84
+start  :51midlle = 89end :100 a inserer :84
+start  :76midlle = 82end :88 a inserer :84
+start  :76midlle = 86end :88 a inserer :84
+start  :83midlle = 83end :85 a inserer :84
+start  :83midlle = 85end :85 a inserer :84
+start  :85INSERTED = 85
+petit a inserer :4
+emplacement dans grand a inserer :79
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {5 } {6 } {7 } {8 } {9 } {10 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {27 } {28 } {29 } {30 } {31 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {58 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {84 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {92 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{15 } {79 } {69 } {48 }
+prev43 jacob85 index : 3nbr element:1prev43end calcul :85
+index : 3 i : 6 nb elem : 1
+endsize == 1849
+endsize == 1849
+if end
+endsize == 96
+midlle = 50end :100 a inserer :48
+start  :1midlle = 25end :49 a inserer :48
+start  :1midlle = 37end :49 a inserer :48
+start  :26midlle = 43end :49 a inserer :48
+start  :38midlle = 46end :49 a inserer :48
+start  :44midlle = 47end :49 a inserer :48
+start  :47midlle = 49end :49 a inserer :48
+start  :49INSERTED = 49
+petit a inserer :3
+emplacement dans grand a inserer :46
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {5 } {6 } {7 } {8 } {9 } {10 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {27 } {28 } {29 } {30 } {31 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {48 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {58 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {84 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {92 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{15 } {79 } {69 }
+prev43 jacob85 index : 2nbr element:1prev43end calcul :85
+index : 2 i : 6 nb elem : 1
+endsize == 1849
+endsize == 1849
+if end
+endsize == 97
+midlle = 50end :100 a inserer :69
+start  :1midlle = 75end :100 a inserer :69
+start  :51midlle = 62end :74 a inserer :69
+start  :51midlle = 68end :74 a inserer :69
+start  :63midlle = 72end :74 a inserer :69
+start  :70midlle = 70end :71 a inserer :69
+start  :70INSERTED = 70
+petit a inserer :2
+emplacement dans grand a inserer :67
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {5 } {6 } {7 } {8 } {9 } {10 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {27 } {28 } {29 } {30 } {31 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {48 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {58 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {69 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {80 } {81 } {82 } {83 } {84 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {92 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{15 } {79 }
+prev43 jacob85 index : 1nbr element:1prev43end calcul :85
+index : 1 i : 6 nb elem : 1
+endsize == 1849
+endsize == 1849
+if end
+endsize == 98
+midlle = 50end :100 a inserer :79
+start  :1midlle = 75end :100 a inserer :79
+start  :51midlle = 88end :100 a inserer :79
+start  :76midlle = 82end :87 a inserer :79
+start  :76midlle = 78end :81 a inserer :79
+start  :76midlle = 80end :81 a inserer :79
+start  :80INSERTED = 80
+petit a inserer :1
+emplacement dans grand a inserer :77
+c'est trie
+PRINT GRAND
+{1 } {2 } {3 } {4 } {5 } {6 } {7 } {8 } {9 } {10 } {11 } {12 } {13 } {14 } {16 } {17 } {18 } {19 } {20 } {21 } {22 } {23 } {24 } {25 } {26 } {27 } {28 } {29 } {30 } {31 } {32 } {33 } {34 } {35 } {36 } {37 } {38 } {39 } {40 } {41 } {42 } {43 } {44 } {45 } {46 } {47 } {48 } {49 } {50 } {51 } {52 } {53 } {54 } {55 } {56 } {57 } {58 } {59 } {60 } {61 } {62 } {63 } {64 } {65 } {66 } {67 } {68 } {69 } {70 } {71 } {72 } {73 } {74 } {75 } {76 } {77 } {78 } {79 } {80 } {81 } {82 } {83 } {84 } {85 } {86 } {87 } {88 } {89 } {90 } {91 } {92 } {93 } {94 } {95 } {96 } {97 } {98 } {99 } {100 }
+PRINT petit
+{15 }
+prev43 jacob85 index : 0nbr element:1prev43end calcul :85
+index : 0 i : 6 nb elem : 1
+endsize == 1849
+endsize == 1849
+if end
+endsize == 99
+midlle = 51end :100 a inserer :15
+start  :1midlle = 26end :50 a inserer :15
+start  :1midlle = 12end :25 a inserer :15
+start  :1midlle = 19end :25 a inserer :15
+start  :13midlle = 16end :18 a inserer :15
+start  :13midlle = 13end :14 a inserer :15
+start  :13midlle = 14end :14 a inserer :15
+start  :14INSERTED = 16
+petit a inserer :0
+emplacement dans grand a inserer :14
+fin d'une eape de recusion
+
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 
+1
