@@ -6,13 +6,13 @@
 #    By: doublevv <vv>                              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/24 09:19:53 by doublevv          #+#    #+#              #
-#    Updated: 2025/09/29 18:35:31 by doublevv         ###   ########.fr        #
+#    Updated: 2025/10/03 08:33:38 by doublevv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = PmergeMe
 
-SOURCES = main.cpp PmergeMe.cpp
+SOURCES = main.cpp PmergeMe.cpp PmergeMeDeque.cpp
 
 SRCS = $(SOURCES)
 

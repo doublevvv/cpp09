@@ -9,11 +9,16 @@
 #include <cstdlib>
 #include <sstream>
 #include <set>
+#include <deque>
+
+#define COMP 1
+#define LOG 1
 
 class PmergeMe
 {
 	public:
-	PmergeMe(){};
+	int nbCmp;
+	PmergeMe(){nbCmp = 0;};
 	~PmergeMe(){};
 	PmergeMe &operator=(const PmergeMe &rhs)
 	{
@@ -35,6 +40,7 @@ class PmergeMe
 	bool isSorted(int nb_el);
 	void printGroups(int nb_elem);
 	void printMinGroups(int nb_elem);
+	void	printCompPair(std::vector<int>::iterator first, std::vector<int>::iterator second);
 
 	private:
 	std::vector<int> vector;
@@ -42,4 +48,35 @@ class PmergeMe
 	std::vector<int> max;
 };
 
+class PmergeMeDeque
+{
+	public:
+	PmergeMeDeque(){};
+	~PmergeMeDeque(){};
+	PmergeMeDeque &operator=(const PmergeMeDeque &rhs)
+	{
+		(void)rhs;
+		return (*this);
+	};
+	PmergeMeDeque(const PmergeMeDeque &obj)
+	{
+		(*this) = obj;
+	};
+	void	parsingD(int ac, char **arg);
+	bool	checkErrorsD(std::deque<int> &list);
+	void	fordJohnD(int size);
+	void	swapD(std::deque<int>::iterator first, std::deque<int>::iterator second, int nbr_ele);
+	void	getMinD(std::deque<int>::iterator &it, int nbr_ele);
+	int		jacobsthalD(int index);
+	std::deque<int>::iterator	binaryResearchD(std::deque<int>::iterator it, std::deque<int>::iterator start, std::deque<int>::iterator end, int nbr_ele);
+	void printdequeD();
+	bool isSortedD(int nb_el);
+	void printGroupsD(int nb_elem);
+	void printMinGroupsD(int nb_elem);
+
+	private:
+	std::deque<int> deque;
+	std::deque<int> min;
+	std::deque<int> max;
+};
 #endif

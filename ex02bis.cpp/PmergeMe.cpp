@@ -1,5 +1,4 @@
 #include "PmergeMe.hpp"
-#include <cmath>
 
 void	PmergeMe::parsing(int ac, char **arg)
 {
@@ -25,9 +24,10 @@ void	PmergeMe::parsing(int ac, char **arg)
 			return ;
 		}
 		vector.push_back(nbr2);
-		// std::cout << "vector =================== " << nbr2 << std::endl;
 		i++;
 	}
+	std::cout << "Before : ";
+	printVector();
 	if (!checkErrors(vector))
 		return ;
 }
@@ -48,6 +48,12 @@ bool	PmergeMe::checkErrors(std::vector<int> &vector)
 	}
 	return (true);
 }
+
+void	PmergeMe::printCompPair(std::vector<int>::iterator first, std::vector<int>::iterator second)
+{
+	std::cout<<"comparing :"<<*first<<" and :"<<*second<<std::endl;
+}
+
 void	PmergeMe::fordJohn(int nbr_element)
 {
 	int group = vector.size() / nbr_element;
@@ -55,10 +61,14 @@ void	PmergeMe::fordJohn(int nbr_element)
 	int i = 0;
 	std::vector<int>::iterator first = vector.begin() + (nbr_element - 1);
 	std::vector<int>::iterator second = first + nbr_element;
-
+	std::cout<<"list before first step for size group: "<<nbr_element<<std::endl;
+	printGroups(nbr_element);
 	while (i < pair)
 	{
 		// std::cout<<"size : "<< vector.size() <<"first :"<<std::distance(vector.begin(), first)<<"second :"<<std::distance(vector.begin(), second)<<std::endl;
+		nbCmp++;
+		if (LOG == 1)
+			printCompPair(first, second);
 		if (*first > *second)
 		{
 			swap(first, second, nbr_element);
@@ -67,10 +77,13 @@ void	PmergeMe::fordJohn(int nbr_element)
 		first += nbr_element * 2;
 		second += nbr_element * 2;
 		i++;
-
 	}
+	std::cout<<"list after first step for size group: "<<nbr_element<<std::endl;
+	printGroups(nbr_element);
 	if (pair > 1)
 	{
+		if (LOG == 1)
+			std::cout<<"\n\trecursively call pmergeme\n"<<std::endl;
 		fordJohn(nbr_element * 2);
 	}
 	// std::cout<<"apres recusrion"<<std::endl;
@@ -123,7 +136,7 @@ void	PmergeMe::fordJohn(int nbr_element)
 		// std::cout<<"index : "<<index<<" i : "<<i<<" nb elem : "<<nbr_element<<std::endl;
 		std::vector<int>::iterator it = min.begin() + (index) * nbr_element;
 		std::vector<int>::iterator inserted;
-		int endSize = pow(prev, 2);
+		int endSize = prev + jacob - 1;
 		// std::cout<<"endsize == "<<endSize<<std::endl;
 
 		if (prev == 1)
@@ -136,6 +149,14 @@ void	PmergeMe::fordJohn(int nbr_element)
 		}
 		// std::cout<<"endsize == "<<endSize<<std::endl;
 		std::vector<int>::iterator end = vector.begin() + (endSize * nbr_element)- 1;
+		if (LOG == 1)
+		{
+			std::cout<<"sorted list before binary search: "<<std::endl;
+			printGroups(nbr_element);
+			std::cout<<std::endl;
+			std::cout<<"unsorted list before binary search: "<<std::endl;
+			printMinGroups(nbr_element);
+		}
 		inserted = binaryResearch(it + nbr_element - 1, vector.begin() + (nbr_element - 1),end, nbr_element);
 		// std::cout << "INSERTED = " << *inserted << std::endl;
 		// std::cout<<"petit a inserer :"<<std::distance(min.begin(), it)<<std::endl;
@@ -144,7 +165,8 @@ void	PmergeMe::fordJohn(int nbr_element)
 		min.erase(it, it + nbr_element);
 		index--;
 	}
-	// std::cout<<"fin d'une eape de recusion\n\n\n";
+	if (LOG == 1)
+		std::cout<<"\n\tend pmergme call\n\n\n";
 }
 
 void	PmergeMe::swap(std::vector<int>::iterator first, std::vector<int>::iterator second, int nbr_ele)
@@ -194,7 +216,9 @@ std::vector<int>::iterator	PmergeMe::binaryResearch(std::vector<int>::iterator i
 	// std::cout<<  "end :"<<*end;
 	// std::cout<<" a inserer :"<<*it<<std::endl;
 	// std::cout<<"start  :"<<*start;
-
+	nbCmp++;
+	if (LOG == 1)
+		std::cout<<"binary search insert :"<<*it<<" comparing with :"<<*middle<<std::endl;
 	if ((*middle) < (*it))
 	{
 		// std::cout << std::distance(vector.begin(), middle) << std::endl;
@@ -248,7 +272,11 @@ void PmergeMe::printGroups(int nb_elem)
 	{
 		if (i > 0 && i%nb_elem == 0)
 			std::cout<<"} {";
-		std::cout<<vector[i]<<" ";
+		else if (i % nb_elem + 1 != 0 && i != 0)
+		{
+			std::cout<<" ";
+		}
+		std::cout<<vector[i];
 	}
 	std::cout<<"}";
 	std::cout<<std::endl;
@@ -262,6 +290,10 @@ void PmergeMe::printMinGroups(int nb_elem)
 	{
 		if (i > 0 && i%nb_elem == 0)
 			std::cout<<"} {";
+		else if (i % nb_elem + 1 != 0 && i != 0)
+		{
+			std::cout<<" ";
+		}
 		std::cout<<min[i]<<" ";
 	}
 	std::cout<<"}";
