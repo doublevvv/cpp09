@@ -26,8 +26,8 @@ void	PmergeMe::parsing(int ac, char **arg)
 		vector.push_back(nbr2);
 		i++;
 	}
-	std::cout << "Before : ";
-	printVector();
+	// std::cout << "Before : ";
+	// printVector();
 	if (!checkErrors(vector))
 		return ;
 }
@@ -40,7 +40,6 @@ bool	PmergeMe::checkErrors(std::vector<int> &vector)
 	{
 		if (seen.find(*it) != seen.end())
 		{
-			// std::cout << " ARG = " << (*it) << std::endl;
 			std::cout << "Error: duplicate number\n";
 			return (false);
 		}
@@ -56,16 +55,20 @@ void	PmergeMe::printCompPair(std::vector<int>::iterator first, std::vector<int>:
 
 void	PmergeMe::fordJohn(int nbr_element)
 {
+	// nbrelement = dans le groupe
+	// pair de 2 groupes
 	int group = vector.size() / nbr_element;
 	int pair = group / 2;
 	int i = 0;
 	std::vector<int>::iterator first = vector.begin() + (nbr_element - 1);
 	std::vector<int>::iterator second = first + nbr_element;
-	std::cout<<"list before first step for size group: "<<nbr_element<<std::endl;
-	printGroups(nbr_element);
+	if (LOG == 1)
+	{
+		std::cout<<"list before first step for size group: "<<nbr_element<<std::endl;
+		printGroups(nbr_element);
+	}
 	while (i < pair)
 	{
-		// std::cout<<"size : "<< vector.size() <<"first :"<<std::distance(vector.begin(), first)<<"second :"<<std::distance(vector.begin(), second)<<std::endl;
 		nbCmp++;
 		if (LOG == 1)
 			printCompPair(first, second);
@@ -78,21 +81,19 @@ void	PmergeMe::fordJohn(int nbr_element)
 		second += nbr_element * 2;
 		i++;
 	}
-	std::cout<<"list after first step for size group: "<<nbr_element<<std::endl;
-	printGroups(nbr_element);
+	if (LOG == 1)
+	{
+		std::cout<<"list after first step for size group: "<<nbr_element<<std::endl;
+		printGroups(nbr_element);
+	}
 	if (pair > 1)
 	{
 		if (LOG == 1)
-			std::cout<<"\n\trecursively call pmergeme\n"<<std::endl;
+			std::cout<<"\n\trecursively call fordjohn\n"<<std::endl;
 		fordJohn(nbr_element * 2);
 	}
-	// std::cout<<"apres recusrion"<<std::endl;
-	// printGroups(nbr_element);
-	// std::cout << std::endl;
-
 	i = 1;
 	std::vector<int>::iterator it = vector.begin() + (nbr_element * 2); //plus petit ele 2eme pair
-	// std::cout<<"nb pair : "<<pair<<" size elem : "<<nbr_element<<std::endl;
 	while (i < pair)
 	{
 		getMin(it, nbr_element);
@@ -110,44 +111,26 @@ void	PmergeMe::fordJohn(int nbr_element)
 	int index = -1;
 	while (min.size() > 0)
 	{
-		// if (isSorted(nbr_element) == true)
-		// 	std::cout<<"c'est trie"<<std::endl;
-
-		// std::cout << "PRINT GRAND\n";
-		// printGroups(nbr_element);
-		// std::cout << "PRINT petit\n";
-		// printMinGroups(nbr_element);
 		if (index < 0)
 		{
-			// i = 0;
-			// std::cout<<"???????????????????????????????????????????????????????????????"<<std::endl;
 			prev = jacob;
-			// std::cout<<"i == "<<i<<std::endl;
 			jacob = jacobsthal(i);
-			// std::cout<<"jacob : "<<jacob<<" prev : "<<prev<<std::endl;
+			// std::cout << "Ford Johnson\n";
 			if (jacob - prev >= (int)min.size() / nbr_element)
 				index = (min.size() / nbr_element) - 1;
 			else
 				index = jacob - prev - 1;
 			i++;
 		}
-		// std::cout<<"prev"<<prev<<" jacob"<<jacob<<" index : "<<index<<"nbr element:"<<nbr_element<<"prev"<<prev<<"end calcul :"<<nbr_element * (prev) * 2 - 1<<std::endl;
-
-		// std::cout<<"index : "<<index<<" i : "<<i<<" nb elem : "<<nbr_element<<std::endl;
 		std::vector<int>::iterator it = min.begin() + (index) * nbr_element;
 		std::vector<int>::iterator inserted;
 		int endSize = prev + jacob - 1;
-		// std::cout<<"endsize == "<<endSize<<std::endl;
-
 		if (prev == 1)
 			endSize = 3;
-		// std::cout<<"endsize == "<<endSize<<std::endl;
 		if ((int)vector.size()/nbr_element < endSize)
 		{
-			// std::cout<<"if end"<<std::endl;
 			endSize = (int)vector.size()/nbr_element;
 		}
-		// std::cout<<"endsize == "<<endSize<<std::endl;
 		std::vector<int>::iterator end = vector.begin() + (endSize * nbr_element)- 1;
 		if (LOG == 1)
 		{
@@ -158,11 +141,16 @@ void	PmergeMe::fordJohn(int nbr_element)
 			printMinGroups(nbr_element);
 		}
 		inserted = binaryResearch(it + nbr_element - 1, vector.begin() + (nbr_element - 1),end, nbr_element);
-		// std::cout << "INSERTED = " << *inserted << std::endl;
-		// std::cout<<"petit a inserer :"<<std::distance(min.begin(), it)<<std::endl;
-		// std::cout<<"emplacement dans grand a inserer :"<<std::distance(vector.begin(), inserted)<<std::endl;
 		vector.insert(inserted, it, it + nbr_element);
 		min.erase(it, it + nbr_element);
+		if (LOG == 1)
+		{
+			std::cout<<"sorted list after binary search: "<<std::endl;
+			printGroups(nbr_element);
+			std::cout<<std::endl;
+			std::cout<<"unsorted list after binary search: "<<std::endl;
+			printMinGroups(nbr_element);
+		}
 		index--;
 	}
 	if (LOG == 1)
@@ -185,16 +173,9 @@ void	PmergeMe::getMin(std::vector<int>::iterator &it, int nbr_ele)
 	int i = 0;
 	while (i < nbr_ele)
 	{
-		// std::cout<<"i == "<<i<<" nbr elem : "<<nbr_ele<<std::endl;
 		min.push_back(*it) ;
 		it = vector.erase(it);
 		i++;
-		// std::cout << "PRINT petit dans erase\n";
-		// for (std::vector<int>::iterator jit = min.begin(); jit != min.end(); jit++)
-		// {
-		// 	std::cout << *jit <<  " ";
-		// }
-		// std::cout<<std::endl;
 	}
 }
 
@@ -207,21 +188,11 @@ std::vector<int>::iterator	PmergeMe::binaryResearch(std::vector<int>::iterator i
 {
 	int index = ((std::distance(start, end) / nbr_ele) / 2) * nbr_ele;
 	std::vector<int>::iterator middle = start + index;
-	// std::cout<<"distance midlle = " << std::distance(vector.begin(), middle);
-	// std::cout<<  "distance end :"<<std::distance(vector.begin(), end);
-	// std::cout<<"distance a inserer :"<<std::distance(min.begin(), it);
-	// std::cout<<"distance start  :"<<std::distance(vector.begin(), start)<<std::endl;;
-
-	// std::cout<<"midlle = " << *middle;
-	// std::cout<<  "end :"<<*end;
-	// std::cout<<" a inserer :"<<*it<<std::endl;
-	// std::cout<<"start  :"<<*start;
 	nbCmp++;
 	if (LOG == 1)
 		std::cout<<"binary search insert :"<<*it<<" comparing with :"<<*middle<<std::endl;
 	if ((*middle) < (*it))
 	{
-		// std::cout << std::distance(vector.begin(), middle) << std::endl;
 		if (middle == end)
 			return (middle+1);
 		middle += nbr_ele;
@@ -229,12 +200,9 @@ std::vector<int>::iterator	PmergeMe::binaryResearch(std::vector<int>::iterator i
 	}
 	else
 	{
-		// std::cout <<"ELSE" <<std::distance(vector.begin(), middle) << std::endl;
 		if (middle == start)
 		{
 			middle -= (nbr_ele-1);
-			// std::cout <<"ELSE" <<std::distance(vector.begin(), (middle)) << std::endl;
-			// std::cout <<"ELSE" <<*(middle) << std::endl;
 			return (middle);
 		}
 		middle -= nbr_ele;
@@ -294,7 +262,7 @@ void PmergeMe::printMinGroups(int nb_elem)
 		{
 			std::cout<<" ";
 		}
-		std::cout<<min[i]<<" ";
+		std::cout<<min[i];
 	}
 	std::cout<<"}";
 	std::cout<<std::endl;

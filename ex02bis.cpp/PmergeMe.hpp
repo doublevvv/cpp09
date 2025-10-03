@@ -10,9 +10,10 @@
 #include <sstream>
 #include <set>
 #include <deque>
+#include <sys/time.h>
 
-#define COMP 1
-#define LOG 1
+#define COMP 0
+#define LOG 0
 
 class PmergeMe
 {
@@ -29,6 +30,10 @@ class PmergeMe
 	{
 		(*this) = obj;
 	};
+	std::vector<int>	getVector()
+	{
+		return (vector);
+	}
 	void	parsing(int ac, char **arg);
 	bool	checkErrors(std::vector<int> &list);
 	void	fordJohn(int size);
