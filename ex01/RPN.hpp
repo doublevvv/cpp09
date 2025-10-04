@@ -5,6 +5,7 @@
 #include <iostream>
 #include <stack>
 #include <cstdlib>
+#include <list>
 
 class RPN
 {
@@ -23,7 +24,7 @@ class RPN
 	void	parsing(std::string);
 
 	private:
-	std::stack<int> stack;
+	std::stack<float, std::list<float> > stack;
 
 };
 

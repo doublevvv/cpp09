@@ -1,5 +1,20 @@
 #include "PmergeMe.hpp"
 
+const char *PmergeMe::Error::what() const throw()
+{
+	return ("Error: arguments not valid\n");
+}
+
+const char *PmergeMe::noDigit::what() const throw()
+{
+	return ("Error: you must use only digit\n");
+}
+
+const char *PmergeMe::incorrectNbr::what() const throw()
+{
+	return ("Error: number incorrect\n");
+}
+
 void	PmergeMe::parsing(int ac, char **arg)
 {
 	int i = 1;
@@ -13,23 +28,23 @@ void	PmergeMe::parsing(int ac, char **arg)
 		{
 			if (!isdigit(input[j]))
 			{
-				std::cerr << "Error: you must use only digit\n";
-				return ;
+				throw noDigit();
 			}
 		}
 		int nbr2 = std::atoi(input.c_str());
 		if (nbr2 < 0 || nbr2 > INT_MAX)
 		{
-			std::cerr << "Error: number incorrect\n";
-			return ;
+			throw incorrectNbr();
 		}
 		vector.push_back(nbr2);
 		i++;
 	}
-	// std::cout << "Before : ";
-	// printVector();
 	if (!checkErrors(vector))
-		return ;
+	{
+		throw Error();
+	}
+	std::cout << "Before : ";
+	printVector();
 }
 
 bool	PmergeMe::checkErrors(std::vector<int> &vector)
@@ -40,7 +55,6 @@ bool	PmergeMe::checkErrors(std::vector<int> &vector)
 	{
 		if (seen.find(*it) != seen.end())
 		{
-			std::cout << "Error: duplicate number\n";
 			return (false);
 		}
 		seen.insert(*it);

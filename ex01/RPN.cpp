@@ -10,7 +10,6 @@
 
 void	RPN::parsing(std::string ope)
 {
-
 	if (ope.size() < 3)
 	{
 		std::cout << "must have at least 3 arguments : 2 numbers and one operator\n";
@@ -21,7 +20,6 @@ void	RPN::parsing(std::string ope)
 		std::cout << "Error: first character incorrect\n";
 		return ;
 	}
-
 	for (size_t i = 0; i < ope.size(); )
 	{
 		if (ope[i] == ' ')
@@ -31,6 +29,11 @@ void	RPN::parsing(std::string ope)
 		}
 		if (isdigit(ope[i]))
 		{
+			if (isdigit(ope[i + 1]))
+			{
+				std::cout << "Error: digit superior to 9\n";
+				return ;
+			}
 			stack.push(std::atoi(&ope[i]));
 			i++;
 		}
@@ -39,12 +42,11 @@ void	RPN::parsing(std::string ope)
 			if (stack.size() < 2)
 			{
 				std::cout << "Error: not enough operands for operation '" << ope[i] << "'\n";
-				return;
+				return ;
 			}
-			int first = stack.top(); stack.pop();
-			int second = stack.top(); stack.pop();
-			int res = 0;
-
+			float first = stack.top(); stack.pop();
+			float second = stack.top(); stack.pop();
+			float res = 0;
 			if (ope[i] == '+')
 				res = second + first;
 			else if (ope[i] == '-')
@@ -60,15 +62,14 @@ void	RPN::parsing(std::string ope)
 				}
 				res = second / first;
 			}
+			else
+			{
+				std::cout << "Error: must have operators\n";
+				return ;
+			}
 			stack.push(res);
-			std::cout << "Result pushed: " << res << std::endl;
+			i++;
 		}
-		else
-		{
-			std::cout << "Error: must have operators\n";
-			return ;
-		}
-		i++;
 	}
 	if (stack.size() == 1)
 		std::cout << "final result = " << stack.top() << std::endl;

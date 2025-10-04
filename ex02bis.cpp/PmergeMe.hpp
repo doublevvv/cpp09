@@ -18,6 +18,24 @@
 class PmergeMe
 {
 	public:
+	class Error : public std::exception
+	{
+	public:
+		virtual const char* what() const throw();
+	};
+
+	class noDigit : public std::exception
+	{
+	public:
+		virtual const char* what() const throw();
+	};
+
+	class incorrectNbr : public std::exception
+	{
+	public:
+		virtual const char* what() const throw();
+	};
+
 	int nbCmp;
 	PmergeMe(){nbCmp = 0;};
 	~PmergeMe(){};
@@ -56,6 +74,23 @@ class PmergeMe
 class PmergeMeDeque
 {
 	public:
+	class Error : public std::exception
+	{
+	public:
+		virtual const char* what() const throw();
+	};
+
+	class noDigit : public std::exception
+	{
+	public:
+		virtual const char* what() const throw();
+	};
+
+	class incorrectNbr : public std::exception
+	{
+	public:
+		virtual const char* what() const throw();
+	};
 	PmergeMeDeque(){};
 	~PmergeMeDeque(){};
 	PmergeMeDeque &operator=(const PmergeMeDeque &rhs)
@@ -67,6 +102,10 @@ class PmergeMeDeque
 	{
 		(*this) = obj;
 	};
+	std::deque<int>	getDeque()
+	{
+		return (deque);
+	}
 	void	parsingD(int ac, char **arg);
 	bool	checkErrorsD(std::deque<int> &list);
 	void	fordJohnD(int size);

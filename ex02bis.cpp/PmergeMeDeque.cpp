@@ -1,6 +1,21 @@
 #include "PmergeMe.hpp"
 #include <cmath>
 
+const char *PmergeMeDeque::Error::what() const throw()
+{
+	return ("Error: arguments not valid");
+}
+
+const char *PmergeMeDeque::noDigit::what() const throw()
+{
+	return ("Error: you must use only digit");
+}
+
+const char *PmergeMeDeque::incorrectNbr::what() const throw()
+{
+	return ("Error: number incorrect");
+}
+
 void	PmergeMeDeque::parsingD(int ac, char **arg)
 {
 	int i = 1;
@@ -25,11 +40,10 @@ void	PmergeMeDeque::parsingD(int ac, char **arg)
 			return ;
 		}
 		deque.push_back(nbr2);
-		// std::cout << "deque =================== " << nbr2 << std::endl;
 		i++;
 	}
 	if (!checkErrorsD(deque))
-		return ;
+		throw Error();
 }
 
 bool	PmergeMeDeque::checkErrorsD(std::deque<int> &deque)

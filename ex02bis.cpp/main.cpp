@@ -20,21 +20,38 @@ int	main(int ac, char **av)
 		std::cout << "Error: too many numbers\n";
 		return (0);
 	}
-	instance.parsing(ac, av);
+	try
+	{
+		instance.parsing(ac, av);
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what();
+		return (0);
+	}
 	instance.fordJohn(1);
 	gettimeofday(&end, NULL);
 	time = (end.tv_sec *1000000 + end.tv_usec) - (start.tv_sec *1000000 + start.tv_usec);
 	std::cout << "After : ";
-	// instance.printVector();
+	instance.printVector();
 
-	std::cout << "TIM + " << time << std::endl;
-	std::cout << "Time to process a range of " << instance.getVector().size() << ": " << "second = " << time /1000000 << " millisecond = " << (time % 1000000) / 1000 << " microseconds = " << time % 1000 << std::endl;
+	std::cout << "Time to process a range of " << instance.getVector().size() << " with std::vector<int> " << ": " << "second = " << time /1000000 << " millisecond = " << (time % 1000000) / 1000 << " microseconds = " << time % 1000 << std::endl;
 	// std::cout<<instance.isSorted(1)<<std::endl;
 
-	deque.parsingD(ac, av);
+	try
+	{
+		deque.parsingD(ac, av);
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+		return (0);
+	}
 	deque.fordJohnD(1);
 	if (COMP == 1)
 		std::cout<<instance.nbCmp<<std::endl;
+	std::cout << "Time to process a range of " << deque.getDeque().size() << " with std::deque<int> " << ": " << "second = " << time /1000000 << " millisecond = " << (time % 1000000) / 1000 << " microseconds = " << time % 1000 << std::endl;
+
 	// deque.printdequeD();
 	// std::cout<<deque.isSortedD(1)<<std::endl;
 }
